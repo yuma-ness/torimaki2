@@ -1,0 +1,32 @@
+@charset "uft-8";
+div#back{
+background-color: black;
+color: floralwhite;
+vertical-align: top;
+text-align: center;
+height: 80px;
+padding: 8px 20px;
+}
+.i{
+    margin-left: 5px;
+}
+div#a{
+    border: solid 2px black;
+    width: 500px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 510px;
+}
+.log{
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 5px;
+}
+button{
+    text-align: center;
+    font-size: 25px;
+    width: 350px;
+    height: 50px;
+    margin-top: 80px;
+    margin-left: 590px;
+}
