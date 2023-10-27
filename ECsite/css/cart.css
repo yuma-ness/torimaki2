@@ -1,0 +1,23 @@
+@charset "uft-8";
+img{
+    width: 200px;
+    height: 200px;
+}
+p{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+tr#a{
+    border: 2px solid slategray;
+    width:300px;
+    table-layout: fixed;
+}
+
+div{
+    border: 2px solid slategray;   
+}
+td#name{
+    text-align: center;
+}
