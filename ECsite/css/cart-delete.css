@@ -1,0 +1,12 @@
+@charset "uft-8";
+div#back{
+    background-color: black;
+}
+div#link{
+    text-align: right;
+    vertical-align: top;
+}
+h1{
+    text-align: center;
+    color: floralwhite;
+}

@@ -1,0 +1,39 @@
+@charset "uft-8";
+div#back{
+    background-color: black;
+}
+div#link{
+    text-align: right;
+    vertical-align: top;
+}
+a#my{
+    color: floralwhite;
+    background-color: yellowgreen;
+}
+a#favo{
+    color: floralwhite;
+    background-color: brown;
+}
+img{
+    margin-right: 25%;
+    width: 200px;
+    height: 200px;
+}
+div#cart{
+    text-align: right;
+    border: 2px solid slategray;
+    margin-left: 95%;
+}
+input#submit{
+    background-color: brown;
+    color: floralwhite;
+}
+div#table{
+    border: 2px solid slategray;
+}
+td{
+    border: 2px solid slategray;
+    width:300px;
+    table-layout: fixed;
+}
+
