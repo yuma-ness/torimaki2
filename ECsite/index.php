@@ -7,6 +7,6 @@
 </head>
 <body>
     <?php require 'menu.php'; ?>
-    <a href="shohin_top.php">商品一覧</a>
+    <a href="login_input.php">official waka DANDISM</a>
 </body>
 </html>

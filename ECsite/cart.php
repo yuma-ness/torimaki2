@@ -31,7 +31,9 @@ if(!empty($_SESSION['product'])){
         echo '<option value="5">5</option>';
         echo '</select></td>';
         
-        echo '<td><a href="cart-delete.php?id=',$id,'">削除</a></td>';
+        echo '<form action="cart-delete.php" method="get">';
+        echo '<td><a href="cart-delete.php" id="',$id,'">削除</a></td>';
+        echo '</form>';
         echo '</tr><br>';
         $size++;
     }

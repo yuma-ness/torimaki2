@@ -24,8 +24,8 @@ echo '<input type="hidden" name="id" value="',$id,'">';
 echo '<td>',$product['name'],'</td>';//名前
 echo '<td>',$product['price'],'</td>';//値段
 echo '<td>',$_POST[$size],'</td>';//サイズ
-
 echo '<td>',$_POST[$id],'</td>';//個数
+
 $total=$total+$product['price']*$_POST[$id];
 
 $_SESSION['ranking'][$id]=[ //ランキング
@@ -34,14 +34,12 @@ $_SESSION['ranking'][$id]=[ //ランキング
 ];
 
 $_SESSION['purchase_history'][$id]=[ //購入履歴
-    'shohin_id'=>$id,
-    'customer_id'=>$_SESSION['customer'][$id],
+    'customer_id'=>$_SESSION['customer']['id'],
     'name'=>$product['name'],
     'price'=>$product['price'],
     'shohin_picture'=>$id,
     'count'=>$_POST[$id]
 ];
-
 $size++;
 }
 echo '<tr><th>合計</th><th></th><th></th><th></th><th></th><th>',$total,'</th></tr>';
