@@ -1,6 +1,4 @@
 <?php session_start(); ?>
-<?php require 'header.php'; ?>
-<?php require 'menu.php'; ?>
 <link rel="stylesheet" href="css/customer_input.css">
 <div class="flex">
 <figure class="image"><img 
