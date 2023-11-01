@@ -19,12 +19,12 @@ if(isset($_POST['kensaku'])){
     echo '<table align="center">';
     echo '<tr>';
     foreach($sql as $row){
-        echo '<td><img alt="image" src="image/',$row['id'],'.jpg"><br>';
+        echo '<td><img alt="image" src="image/',$row['id'],'.png"><br>';
         echo '<form action="cart-insert.php" method="post">';
         echo '商品名：',$row['shohin_name'],'<br>';
         echo '価格：',$row['shohin_price'],'<br>';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
-        echo '<input type="hidden" name="picture" value="image/',$row['id'],'.jpg">';
+        echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
         echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
         echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
         echo '<input type="submit" value="カートに追加" id="submit"></br>';
@@ -45,12 +45,12 @@ if(isset($_POST['kensaku'])){
     echo '<table align="center">';
     echo '<tr>';
     foreach($sql as $row){
-        echo '<td><img alt="image" src="image/',$row['id'],'.jpg"><br>';
+        echo '<td><img alt="image" src="image/',$row['id'],'.png"><br>';
         echo '<form action="cart-insert.php" method="post">';
         echo '商品名：',$row['shohin_name'],'<br>';
         echo '価格：',$row['shohin_price'],'<br>';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
-        echo '<input type="hidden" name="picture" value="image/',$row['id'],'.jpg">';
+        echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
         echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
         echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
         echo '<input type="submit" value="カートに追加" id="submit"><br>';
@@ -70,12 +70,12 @@ $tr=0;
 echo '<table align="center">';
 echo '<tr>';
 foreach($sql as $row){
-    echo '<td><img alt="image" src="image/',$row['id'],'.jpg"><br>';
+    echo '<td><img alt="image" src="image/',$row['id'],'.png"><br>';
     echo '<form action="cart-insert.php" method="post">';
     echo '商品名：',$row['shohin_name'],'<br>';
     echo '価格：',$row['shohin_price'],'<br>';
     echo '<input type="hidden" name="id" value="',$row['id'],'">';
-    echo '<input type="hidden" name="picture" value="image/',$row['id'],'.jpg">';
+    echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
     echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
     echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
     echo '<input type="submit" value="カートに追加" id="submit"><br>';

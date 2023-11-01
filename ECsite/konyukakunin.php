@@ -34,10 +34,16 @@ foreach($_SESSION['ranking'] as $id=>$ranking){
     }
     $countOk=0;
 }
+$s = $pdo->prepare('insert into purchase values(null,?)');
+$s->execute([$_SESSION['customer']['id']]);
+$id=$pdo->lastInsertId();
 
+$sql = $pdo->prepare('insert into purchase_history values(?,?,?,?,?,?,?,?)');
+foreach($_SESSION['purchase_history'] as $hisid=>$history){
+$sql->execute([$id,$hisid,$history['customer_id'],$history['name'],$history['price'],$history['shohin_picture'],$history['count'],$history['size']]);
+}
 
-
-$sql = $pdo->prepare('replace into purchase_history values(?,?,?,?,?,?)');
+/*$sql = $pdo->prepare('replace into purchase_history values(?,?,?,?,?,?)');
 $id_sql2 = $pdo->prepare('select shohin_id from purchase_history where customer_id=?');
 $countsql2 = $pdo->prepare('select count from purchase_history where shohin_id=? and customer_id=?');
 $hisOk=0;
@@ -59,7 +65,7 @@ foreach($_SESSION['purchase_history'] as $history_id=>$history){
     }
     $hisOk=0;
     //$sql->execute([$history_id,$history['customer_id'],$history['name'],$history['price'],$history['shohin_picture'],$history['count']]);
-}
+}*/
 unset($_SESSION['purchase_history']);
 unset($_SESSION['ranking']);
 ?>
