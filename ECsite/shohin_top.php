@@ -26,7 +26,7 @@ foreach($sqla as $a){
     if($jyuni<6){
     echo '<tr>';
     echo '<td>',$jyuni,'位：</td>';
-    echo '<td><img alt="image" src="image/',$a["id"],'.jpg" id="rank"></td>';
+    echo '<td><img alt="image" src="image/',$a["id"],'.png" id="rank"></td>';
     echo '<td>商品番号：',$a['id'],'</td>';
     echo '<td>　商品名：',$a['name'],'</td>';
     $jyuni++;
@@ -46,7 +46,7 @@ echo '<table id="cate" align="center">';
 echo '<tr>';
 foreach($sql2 as $row){
     echo '<td id="cate"><a href="shohin.php?category=',$row['category'],'">';
-    echo '<img src="image/',$row['picture'],'" alt="image">';
+    echo '<img src="image/',$row['picture'],'.png" alt="image">';
     echo '</a><br>';
     echo '<a href="shohin.php?category=',$row['category'],'">',$row['category'],'</a>';
     echo '</td>';
