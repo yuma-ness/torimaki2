@@ -1,6 +1,4 @@
 <?php session_start(); ?>
-<?php require 'header.php'; ?>
-<?php require 'menu.php'; ?>
 <link rel="stylesheet" href="css/customer_input.css">
 <div class="flex">
 <figure class="image"><img 
@@ -20,20 +18,20 @@ if (isset($_SESSION['customer'])){
     echo'<form action="customer-output.php" method="post">';
     echo'<table align="center">';
     echo'<tr><td>ユーザー名</td><td>';
-    echo'<input type="text" align="center" name="name" value="',$name,'">','<br>';
+    echo'<p>','<input type="text" align="center" name="name" value="',$name,'">','</p>';
     echo'</td></tr>';
     echo'<tr><td>メールアドレス</td><td>';
-    echo'<p>','<input type="text" name="address" value="',$address,'">','<br>';
+    echo'<p>','<input type="text" name="address" value="',$address,'">','</p>';
     echo'</td></tr>';
     echo'<tr><td>パスワード</td><td>';
-    echo'<p>','<input type="text" name="login" value="',$login,'">','<br>';
+    echo'<p>','<input type="text" name="login" value="',$login,'">','</p>';
     echo'</td></tr>';
     echo'<tr><td>パスワード確認</td><td>';
-    echo'<p>','<input type="text" name="password" value="',$password,'">','<br>';
+    echo'<p>','<input type="text" name="password" value="',$password,'">','</p>';
     echo'</td></tr>';
-    echo'<input type="submit" value="登録">';
-    echo'</form>';
     echo'</table>';
+    echo'<p align="center">','<input type="submit" value="登録">','</p>';
+    echo'</form>';
     ?>
     </div>
 <?php require 'footer.php'; ?>
