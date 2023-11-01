@@ -19,7 +19,7 @@ foreach($_SESSION['product'] as $id=>$product){
         $i++;
     }
 echo '<tr>';
-echo '<td>', $id ,'</td>';
+echo '<td><img alt="image" src="image/',$id,'.png"></td>';
 echo '<input type="hidden" name="id" value="',$id,'">';
 echo '<td>',$product['name'],'</td>';//名前
 echo '<td>',$product['price'],'</td>';//値段
