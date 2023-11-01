@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<div class="flex">
+<figure class="image"><img 
+src="image/rogo.jpg">
+</figure>
+<h1>新規登録<h1>
+</div>
 <body>
     <?php
     $name=$password=$address=$useraddress='';
