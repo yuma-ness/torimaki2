@@ -46,7 +46,7 @@ echo '<table id="cate" align="center">';
 echo '<tr>';
 foreach($sql2 as $row){
     echo '<td id="cate"><a href="shohin.php?category=',$row['category'],'">';
-    echo '<img src="image2/',$row['picture'],'.png" alt="image">';
+    echo '<img src="image2/',$row['picture'],'.png" alt="image">';//カテゴリ画像表示⇒image2
     echo '</a><br>';
     echo '<a href="shohin.php?category=',$row['category'],'">',$row['category'],'</a>';
     echo '</td>';
