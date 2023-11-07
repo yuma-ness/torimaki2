@@ -8,11 +8,12 @@ src="image/rogo.jpg">
 </div>
 <div id="back">
 <?php
-$name=$address=$login=$password='';
+$name=$address=$post=$useraddress=$password='';
 if (isset($_SESSION['customer'])){
     $name=$_SESSION['customer']['name'];
+    $post=$_SESSION['customer']['post'];
     $address=$_SESSION['customer']['address'];
-    $login=$_SESSION['customer']['login'];
+    $useraddress=$_SESSION['customer']['useraddress'];
     $password=$_SESSION['customer']['password'];
 }
     echo'<form action="customer-output.php" method="post">';
@@ -20,14 +21,17 @@ if (isset($_SESSION['customer'])){
     echo'<tr><td>ユーザー名</td><td>';
     echo'<p>','<input type="text" align="center" name="name" value="',$name,'">','</p>';
     echo'</td></tr>';
+    echo'<tr><td>郵便番号</td><td>';
+    echo'<p>','<input type="text" name="post" value="',$post,'">','</p>';
+    echo'</td></tr>';
     echo'<tr><td>メールアドレス</td><td>';
     echo'<p>','<input type="text" name="address" value="',$address,'">','</p>';
     echo'</td></tr>';
     echo'<tr><td>パスワード</td><td>';
-    echo'<p>','<input type="text" name="login" value="',$login,'">','</p>';
-    echo'</td></tr>';
-    echo'<tr><td>パスワード確認</td><td>';
     echo'<p>','<input type="text" name="password" value="',$password,'">','</p>';
+    echo'</td></tr>';
+    echo'<tr><td>住所</td><td>';
+    echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'">','</p>';
     echo'</td></tr>';
     echo'</table>';
     echo'<p align="center">','<input type="submit" value="登録">','</p>';
