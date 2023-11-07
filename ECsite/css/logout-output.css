@@ -1,14 +1,16 @@
 @charset "uft-8";
-div#back{
-background-color: black;
-color: floralwhite;
-vertical-align: top;
-text-align: center;
-height: 80px;
-padding: 8px 20px;
+.flex{
+    position: relative;
+    display: flex;
+    background-color: black;
+    z-index: -1;
 }
-.i{
-    margin-left: 5px;
+h1{
+    position: relative;
+    margin: 50px;
+    padding: 20px 0px 20px 260px;
+    color: white;
+    z-index: 1;
 }
 div#a{
     border: solid 2px black;
