@@ -3,6 +3,7 @@
 <?php require 'db-connect.php'; ?>
 <?php 
 unset($_SESSION['customer']);
+if($_POST['password'] != null && $_POST['login'] != null){
 $pdo = new PDO($connect,USER,PASS);
 $sql = $pdo->prepare('select * from customer where user_name=?');
 $sql->execute([$_POST['login']]);
@@ -15,12 +16,16 @@ foreach($sql as $row){
     ];
     }
 }
-if(isset($_SESSION['customer']['id'])){
+if(isset($_SESSION['customer'])){
     echo 'いらっしゃいませ、',$_SESSION['customer']['name'],'さん。';
    echo '<a href="index.php" id="my">マイページへ</a>';
 
 }else{
     echo 'ログイン名またはパスワードが違います。';
+    echo '<a href="index.php" id="my">マイページへ</a>';
+}
+}else{
+    echo 'ログイン名またはパスワードを入力してください。';
     echo '<a href="index.php" id="my">マイページへ</a>';
 }
 ?>
