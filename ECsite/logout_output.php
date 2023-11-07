@@ -1,10 +1,12 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
 <link rel="stylesheet" href="css/logout-output.css">
+    <div class="flex">
+<figure class="image">
+<img src ="image/rogo.jpg">
+</figure>
 <div id='back'>
     <h1>ログアウト</h1>
-    <div class="i">
-    <img src ="image/rogo.jpg">
 </div>
 </div>
 <div id='a'>
