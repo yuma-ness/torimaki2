@@ -15,7 +15,7 @@ foreach($sql as $row){
     ];
     }
 }
-if(isset($_SESSION['customer'])){
+if(isset($_SESSION['customer']['id'])){
     echo 'いらっしゃいませ、',$_SESSION['customer']['name'],'さん。';
    echo '<a href="index.php" id="my">マイページへ</a>';
 
