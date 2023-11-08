@@ -5,9 +5,7 @@
 <figure class="image">
 <img src ="image/rogo.jpg">
 </figure>
-<div id='back'>
     <h1>ログアウト</h1>
-</div>
 </div>
 <div id='a'>
 <?php
