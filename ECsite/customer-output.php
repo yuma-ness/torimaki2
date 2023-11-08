@@ -44,14 +44,17 @@
                 $_REQUEST['address'],$_REQUEST['useraddress'],$_REQUEST['post']
             ]);
                 echo'<p class="log">お客様情報を登録しました。</p>';
+                echo '<a href="login_input.php" id="my"><button>ログインへ戻る</button></a>';
     }else{
         echo'<p class="log">ログイン名が既に使用されていますので、変更してください。</p>';
+        echo '<a href="customer_input.php" id="my"><button>登録画面へ戻る</button></a>';
     }
     }else{
         echo'<p class="log">メールアドレスが既に使用されていますので、変更してください。</p>';
+        echo '<a href="customer_input.php" id="my"><button>登録画面へ戻る</button></a>';
     }
 ?>
 </div>
-<a href="login_input.php" id="my"><button>ログインへ戻る</button></a>
+
 </body>
 </html>
