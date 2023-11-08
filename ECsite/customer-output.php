@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/logout-output.css">
     <title>Document</title>
 </head>
+<div class="flex">
+<figure class="image">
+<img src ="image/rogo.jpg">
+</figure>
+    <h1>ログアウト</h1>
+</div>
 <body>
 <?php require 'db-connect.php';?>
+<div id='a'>
 <?php
      $pdo=new PDO($connect,USER,PASS);
      if(isset($_SESSION['customer'])){
@@ -35,13 +43,15 @@
                 $_REQUEST['name'],$_REQUEST['password'],
                 $_REQUEST['address'],$_REQUEST['useraddress'],$_REQUEST['post']
             ]);
-                echo'お客様情報を登録しました。';
+                echo'<p class="log">お客様情報を登録しました。</p>';
     }else{
-        echo'ログイン名が既に使用されていますので、変更してください。';
+        echo'<p class="log">ログイン名が既に使用されていますので、変更してください。</p>';
     }
     }else{
-        echo'メールアドレスが既に使用されていますので、変更してください。';
+        echo'<p class="log">メールアドレスが既に使用されていますので、変更してください。</p>';
     }
 ?>
+</div>
+<a href="login_input.php" id="my"><button>ログインへ戻る</button></a>
 </body>
 </html>
