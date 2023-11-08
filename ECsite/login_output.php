@@ -10,7 +10,7 @@ $sql->execute([$_POST['login']]);
 foreach($sql as $row){
     if($_POST["password"]==$row['password']){
     $_SESSION['customer']=[
-        'id'=>$row['id'],'name'=>$row['user_name'],
+        'id'=>$row['id'],'name'=>$row['user_name'],'post'=>$row['post'],
         'password'=>$row['password'],'address'=>$row['mail_address'],
         'useraddress'=>$row['user_address'],
     ];
