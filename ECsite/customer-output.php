@@ -1,12 +1,12 @@
 <?php session_start();?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<link rel="stylesheet" href="css/customer_output.css">
+<div class="flex">
+<figure class="image"><img 
+src="image/rogo.jpg">
+</figure>
+<h1>新規登録<h1>
+</div>
+<div id='a'>
 <?php require 'db-connect.php';?>
 <?php
      $pdo=new PDO($connect,USER,PASS);
@@ -30,19 +30,20 @@
                 'password'=>$_REQUEST['password'],'address'=>$_REQUEST['address'],
                 'useraddress'=>$_REQUEST['useraddress'],'post'=>$_REQUEST['post']
             ];
-            echo 'お客様情報を更新しました。';
+            echo '<p class="log">お客様情報を更新しました。</p>';
     }else{
             $sql=$pdo->prepare('insert into customer values(null,?,?,?,?,?)');
             $sql->execute([
                 $_REQUEST['name'],$_REQUEST['password'],
                 $_REQUEST['address'],$_REQUEST['useraddress'],$_REQUEST['post']
             ]);
-                echo'お客様情報を登録しました。';
+                echo'<p class="log">お客様情報を登録しました。</p>';
             }
         
         }else{
-            echo'ログイン名が既に使用されていますので、変更してください。';
+            echo'<p class="log">ログイン名が既に使用されていますので、<br>変更してください。</p>';
         }
             ?>
-            </body>
-</html>
+            </div>
+            <a href="login_input.php" id="my"><button>ログインへ戻る</button></a>
+            
