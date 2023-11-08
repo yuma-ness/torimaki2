@@ -5,9 +5,7 @@
 <figure class="image">
 <img src ="image/rogo.jpg">
 </figure>
-<div id='back'>
     <h1>ログアウト</h1>
-</div>
 </div>
 <div id='a'>
 <?php
@@ -20,5 +18,5 @@ if(isset($_SESSION['customer'])){
 ?>
 
 </div>
-    <a href="login_inout.php" id="my"><button>ログインへ戻る</button></a>
+    <a href="login_input.php" id="my"><button>ログインへ戻る</button></a>
 <?php require 'footer.php'; ?>
