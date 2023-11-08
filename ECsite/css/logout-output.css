@@ -4,6 +4,7 @@
     display: flex;
     background-color: black;
     z-index: -1;
+    width: auto;
 }
 h1{
     position: relative;

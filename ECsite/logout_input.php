@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="css/logout-input.css">
-<div id='back'>
-    <h1>ログアウト</h1>
+<div class="flex">
+<figure class="image"><img 
+src="image/rogo.jpg">
+</figure>
+<h1>ログアウト<h1>
 </div>
 <div id='a'>
 <?php require 'header.php'; ?>
