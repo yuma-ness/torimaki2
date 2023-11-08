@@ -18,5 +18,5 @@ if(isset($_SESSION['customer'])){
 ?>
 
 </div>
-    <a href="login_inout.php" id="my"><button>ログインへ戻る</button></a>
+    <a href="login_input.php" id="my"><button>ログインへ戻る</button></a>
 <?php require 'footer.php'; ?>
