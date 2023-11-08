@@ -29,18 +29,6 @@
      }
      if(empty($sql2->fetchAll())){
      if(empty($sql->fetchAll())){
-            /*$sql=$pdo->prepare('update customer set user_name=?, password=?,mail_address=?,user_address=?,post=? where id=?');
-            $sql->execute([
-                $_REQUEST['name'],$_REQUEST['password'],
-                $_REQUEST['address'],$_REQUEST['useraddress'],$_REQUEST['post'],$id
-            ]);
-            $_SESSION['customer']=[
-                'id'=>$id,'name'=>$_REQUEST['name'],
-                'password'=>$_REQUEST['password'],'address'=>$_REQUEST['address'],
-                'useraddress'=>$_REQUEST['useraddress'],'post'=>$_REQUEST['post']
-            ];
-            echo 'お客様情報を更新しました。';
-            */
             $sql=$pdo->prepare('insert into customer values(null,?,?,?,?,?)');
             $sql->execute([
                 $_REQUEST['name'],$_REQUEST['password'],
