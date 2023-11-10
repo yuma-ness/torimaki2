@@ -12,7 +12,7 @@ $i=1;
 $size=0;
 echo '<form action="konyukakunin.php" method="post">';
 echo '<table>';
-echo '<tr><th>商品番号</th><th>商品名</th><th>価格</th><th>サイズ</th><th>個数</th><th></th></tr>';
+//echo '<tr><th>商品番号</th><th>商品名</th><th>価格</th><th>サイズ</th><th>個数</th><th></th></tr>';
 foreach($_SESSION['product'] as $id=>$product){
     if($i==1){
         $size=$id+10;
