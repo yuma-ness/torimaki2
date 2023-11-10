@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
+<link rel="stylesheet" href="css/konyu.css">
 <?php
 $total=0;
 if(!isset($_SESSION['ranking'])){
@@ -22,7 +23,7 @@ echo '<tr>';
 echo '<td><img alt="image" src="image/',$id,'.png"></td>';
 echo '<input type="hidden" name="id" value="',$id,'">';
 echo '<td>',$product['name'],'</td>';//名前
-echo '<td>',$product['price'],'</td>';//値段
+echo '<td>',"￥",$product['price'],'</td>';//値段
 echo '<td>',$_POST[$size],'</td>';//サイズ
 echo '<td>',$_POST[$id],'</td>';//個数
 
@@ -43,11 +44,11 @@ $_SESSION['purchase_history'][$id]=[ //購入履歴
 ];
 $size++;
 }
-echo '<tr><th>合計</th><th></th><th></th><th></th><th></th><th>',$total,'</th></tr>';
+echo '<tr><th>合計金額</th><th></th><th></th><th></th><th></th><th>',"￥",$total,'</th></tr>';
 echo '</table>';
 echo '<h3>購入を確定しますか？</h3>';
 ?>
-<p><input type="submit" value="カートに追加"></p>
+<p><input type="submit" value="購入確定"></p>
 </form>
 <br>
 <a href="cart-show.php">カートへ戻る</a>
