@@ -25,7 +25,10 @@ if(isset($_SESSION['customer'])){
         echo '</tr>';
     }
     echo '</table>';
+    echo '<a href="shohin_top.php">商品一覧へ</a>';
+    echo '<a href="mypage.php">マイページへ</a>';
 }else{
     echo 'お気に入りを表示するには、ログインしてください。';
+    echo '<a href="login_input.php">ログイン画面へ</a>';
 }
 ?>

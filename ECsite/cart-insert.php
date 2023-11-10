@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="css/cart.css">
 <div id="back">
     <div id="link">
-    <a href="index.php" id="moji">マイページへ</a>
+    <a href="mypage.php">マイページへ</a>
     <h1>カート</h1>
     </div>
 </div>
