@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php require 'menu.php'; ?>
     <a href="login_input.php">official waka DANDISM</a>
 </body>
 </html>
