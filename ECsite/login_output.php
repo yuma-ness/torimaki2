@@ -18,7 +18,7 @@ foreach($sql as $row){
 }
 if(isset($_SESSION['customer'])){
     echo 'いらっしゃいませ、',$_SESSION['customer']['name'],'さん。';
-   echo '<a href="mypage.php" id="my">マイページへ</a>';
+   echo '<a href="shohin_top.php" id="my">商品一覧へ</a>';
 
 }else{
     echo 'ログイン名またはパスワードが違います。';

@@ -11,5 +11,5 @@ src="image/rogo.jpg">
 ログアウト後のログイン画面へ移行します</p>
 </div>
 <a href="logout_output.php"><button>ログアウト</button></a>
-<a href="index.php" id="my"><button>マイページへ</button></a>
+<a href="mypage.php" id="my"><button>マイページへ</button></a>
 <?php require 'footer.php'; ?>

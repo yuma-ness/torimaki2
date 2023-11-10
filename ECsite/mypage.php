@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+<a href="history.php">注文履歴を見る</a>
+<a href="favorite-show.php">お気に入り</a>
 <?php require 'db-connect.php';?>
 <?php
      $pdo=new PDO($connect,USER,PASS);
@@ -56,5 +58,6 @@
         }
     }
     ?>
-            <a href="shohin_top.php"><button>検索画面戻る</button></a>
+            <a href="shohin_top.php"><button>商品一覧へ</button></a>
+            <a href="logout_input.php">ログアウト</a>
     </body>

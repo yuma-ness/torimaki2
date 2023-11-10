@@ -47,7 +47,7 @@ echo '<tr><th>合計</th><th></th><th></th><th></th><th></th><th>',$total,'</th>
 echo '</table>';
 echo '<h3>購入を確定しますか？</h3>';
 ?>
-<p><input type="submit" value="カートに追加"></p>
+<p><input type="submit" value="購入する"></p>
 </form>
 <br>
 <a href="cart-show.php">カートへ戻る</a>

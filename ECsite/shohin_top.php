@@ -6,7 +6,7 @@
     <div id="link">
     <a href="mypage.php" id="my">マイページへ</a>
     <br>
-    <a href="" id="favo">お気に入りへ</a>
+    <a href="favorite_show.php" id="favo">お気に入りへ</a>
     </div>
     <form action="shohin.php" method="post">
     <div id="kensaku">
