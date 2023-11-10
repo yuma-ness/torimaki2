@@ -1,8 +1,17 @@
 <?php session_start(); ?>
+<link rel="stylesheet" href="css/konyukakunin.css">
+<div class="flex">
+<figure class="image"><img 
+src="image/rogo.jpg">
+</figure>
+<h1>購入完了<h1>
+</div>
 <?php require 'header.php'; ?>
 <?php require 'db-connect.php'; ?>
-購入が完了しました<br>
+<div id='a'>
+<p class='log'>購入が完了しました<br>
 発送準備が出来次第お届けします<br>
+
 <?php
 $id=$_POST['id'];
 $pdo = new PDO($connect,USER,PASS);
@@ -11,7 +20,6 @@ $sql->execute(['masa']);
 foreach($sql as $row){
     echo $row['user_address'];
 }
-
 $sqlvalue = $pdo->prepare('replace into Ranking values(?,?,?)');
 $id_sql = $pdo->query('select id from Ranking');
 $countsql = $pdo->prepare('select count from Ranking where id=?');
@@ -69,5 +77,7 @@ foreach($_SESSION['purchase_history'] as $history_id=>$history){
 unset($_SESSION['purchase_history']);
 unset($_SESSION['ranking']);
 ?>
-<p><a href="shohin_top.php">商品一覧へ戻る</a></p>
+</p>
+</div>
+<p><a href="shohin_top.php"><button>商品一覧へ戻る</button></a></p>
 <?php require 'footer.php'; ?>
