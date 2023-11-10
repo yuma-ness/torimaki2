@@ -4,7 +4,7 @@
     
 <div id="back">
     <div id="link">
-    <a href="index.php" id="my">マイページへ</a>
+    <a href="mypage.php" id="my">マイページへ</a>
     <br>
     <a href="" id="favo">お気に入りへ</a>
     </div>
