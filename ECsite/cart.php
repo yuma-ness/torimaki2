@@ -15,6 +15,7 @@ if(!empty($_SESSION['product'])){
         echo '<td><img alt="image" src="', $product['picture'] ,'"></td>';
         echo '<td id="name"><a href="detail.php?id=',$id,'">',$product['name'],'</a></td>';
         echo '<td>',$product['price'],'</td>';
+        echo '<td>カラー：',$product['exp'],'</td>';
         
         echo '<td><select name="',$size,'">';
         echo '<option value="S" selected>S</option>';
