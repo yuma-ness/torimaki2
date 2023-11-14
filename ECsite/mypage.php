@@ -13,11 +13,11 @@
 <img src ="image/rogo.jpg">
 </figure>
     <h1>マイページ</h1>
-    <div id="link">
+<div id="div">   
     <a href="history.php" id="hi">注文履歴</a>
     <br>
     <a href="favorite-show.php" id="favo">お気に入りへ</a>
-    </div>
+</div>
 </div>
 <?php require 'db-connect.php';?>
 <?php

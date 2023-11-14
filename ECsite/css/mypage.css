@@ -4,6 +4,8 @@
   display:flex;
   background-color:black;
   z-index:-1;
+  margin-right: 0%;
+  padding-right: 0%;
 }
 .flex.image{
   width:100px;
@@ -22,5 +24,23 @@ h1{
   z-index:1;
 }
 div#link{
+  text-align:right;
   padding: 0px 0px 0px 250px;
+}
+a{
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+div:last-child{
+  margin-left: auto;
+}
+
+a.hi{
+  position: absolute;
+  margin-left: auto;
+}
+a.favo{
+  position: relative;
+  text-align: right;
 }
