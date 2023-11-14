@@ -18,7 +18,7 @@
     <br>
     <a href="favorite-show.php" id="favo">お気に入りへ</a>
 </div>
-</div>
+    </div>
 <?php require 'db-connect.php';?>
 <?php
      $pdo=new PDO($connect,USER,PASS);
