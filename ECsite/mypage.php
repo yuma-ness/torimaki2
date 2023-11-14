@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/logout-output.css">
     <title>Document</title>
 </head>
 <body>
-<a href="history.php">注文履歴を見る</a>
-<a href="favorite-show.php">お気に入り</a>
+    <div class="flex">
+<figure class="image">
+<img src ="image/rogo.jpg">
+</figure>
+    <h1>ログアウト</h1>
+    <a href="history.php">注文履歴を見る</a>
+    <a href="favorite-show.php">お気に入り</a>
+</div>
 <?php require 'db-connect.php';?>
 <?php
      $pdo=new PDO($connect,USER,PASS);
