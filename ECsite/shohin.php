@@ -22,6 +22,7 @@ if(isset($_POST['kensaku'])){
         echo '<td><img alt="image" src="image/',$row['id'],'.png"><br>';
         echo '<form action="cart-insert.php" method="post">';
         echo '商品名：',$row['shohin_name'],'<br>';
+        echo 'カラー：',$row['exp'],'<br>';
         echo '価格：￥',$row['shohin_price'],'<br>';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
         echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
@@ -48,6 +49,7 @@ if(isset($_POST['kensaku'])){
         echo '<td><img alt="image" src="image/',$row['id'],'.png"><br>';
         echo '<form action="cart-insert.php" method="post">';
         echo '商品名：',$row['shohin_name'],'<br>';
+        echo 'カラー：',$row['exp'],'<br>';
         echo '価格：￥',$row['shohin_price'],'<br>';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
         echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
