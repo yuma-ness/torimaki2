@@ -16,7 +16,7 @@ src="image/rogo.jpg">
 $id=$_POST['id'];
 $pdo = new PDO($connect,USER,PASS);
 $sql = $pdo->prepare('select * from customer where user_name=?');
-$sql->execute(['masa']);
+$sql->execute([$_SESSION['customer']['useraddress']]);
 foreach($sql as $row){
     echo $row['user_address'];
 }
