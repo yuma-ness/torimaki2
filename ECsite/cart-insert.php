@@ -16,7 +16,8 @@ if(!isset($_SESSION['product'])){
 $_SESSION['product'][$id]=[
     'picture'=>$_POST['picture'],
     'name'=>$_POST['name'],
-    'price'=>$_POST['price']
+    'price'=>$_POST['price'],
+    'exp'=>$_POST['exp']
 ];
 echo '<p>カートに商品を追加しました。</p>';
 echo '<hr>';

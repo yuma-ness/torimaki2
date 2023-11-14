@@ -6,6 +6,7 @@
     <a href="mypage.php" id="my">マイページへ</a>
     <br>
     <a href="favorite_show.php" id="favo">お気に入りへ</a>
+    <a href="shohin_top.php">商品トップ</a>
     </div>
 </div>
 <?php
@@ -27,6 +28,7 @@ if(isset($_POST['kensaku'])){
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
         echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
         echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
+        echo '<input type="hidden" name="exp" value="',$row['exp'],'">';
         echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
         echo '<input type="submit" value="カートに追加" id="submit"></br>';
         echo '</form>';
@@ -54,6 +56,7 @@ if(isset($_POST['kensaku'])){
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
         echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
         echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
+        echo '<input type="hidden" name="exp" value="',$row['exp'],'">';
         echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
         echo '<input type="submit" value="カートに追加" id="submit"><br>';
         echo '</form>';
@@ -79,6 +82,7 @@ foreach($sql as $row){
     echo '<input type="hidden" name="id" value="',$row['id'],'">';
     echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
     echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
+    echo '<input type="hidden" name="exp" value="',$row['exp'],'">';
     echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
     echo '<input type="submit" value="カートに追加" id="submit"><br>';
     echo '</form>';
