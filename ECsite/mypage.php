@@ -69,5 +69,5 @@
     }
     ?>
             <a href="shohin_top.php"><button>商品一覧へ</button></a>
-            <a href="logout_input.php">ログアウト</a>
+            <a class="logout" href="logout_input.php">ログアウト</a>
     </body>
