@@ -1,4 +1,8 @@
 @charset "uft-8";
+body{
+    background-color: rgb(133, 139, 158);
+
+}
 
 .item {
     display: flex;
@@ -16,7 +20,11 @@
 .color{
     color:blueviolet
 }
-/* .flex{
+
+.color-1{
+    color:blueviolet
+}
+.flex{
     position: relative;
     display: flex;
     background-color: black;
@@ -36,6 +44,9 @@ h1{
     margin: 50px;
     padding: 20px 0px 20px 260px;
     color:white;
+}
+/* div{
+    border: 2px solid slategray;   
 } */
 /* p{
     text-align: center;
@@ -49,9 +60,6 @@ tr#a{
     table-layout: fixed;
 }
 
-div{
-    border: 2px solid slategray;   
-}
 td#name{
     text-align: center;
 } */

@@ -31,7 +31,7 @@ echo '<input type="hidden" name="id" value="',$id,'">';
 echo '<div class="item-s">';
 echo '<div>',$product['name'],'</div>';//名前
 echo '<div>','<span class="color">',$_POST[$size],'</span>','　サイズ','</div>';//サイズ
-echo '<div>',$_POST[$id],'　個</div>';//個数
+echo '<div>','<span class="color-1">',$_POST[$id],'</span>','　個</div>';//個数
 echo '<div>',"￥",$product['price'],'</div>';//値段
 echo '</div>';
 echo '</div>';
