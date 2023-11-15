@@ -1,5 +1,22 @@
 @charset "uft-8";
-.flex{
+
+.item {
+    display: flex;
+    margin: 20px;
+}
+
+.item-s {
+    margin: 5px;
+}
+
+.kane {
+    display: flex;
+}
+
+.color{
+    color:blueviolet
+}
+/* .flex{
     position: relative;
     display: flex;
     background-color: black;
@@ -19,8 +36,8 @@ h1{
     margin: 50px;
     padding: 20px 0px 20px 260px;
     color:white;
-}
-p{
+} */
+/* p{
     text-align: center;
 }
 table{
@@ -37,4 +54,4 @@ div{
 }
 td#name{
     text-align: center;
-}
+} */
