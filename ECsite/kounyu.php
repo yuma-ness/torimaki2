@@ -1,6 +1,12 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
 <link rel="stylesheet" href="css/konyu.css">
+<div class="flex">
+<figure class="image"><img 
+src="image/rogo.jpg">
+</figure>
+<h1>購入確認<h1>
+</div>
 <?php
 $total=0;
 if(!isset($_SESSION['ranking'])){
@@ -19,13 +25,15 @@ foreach($_SESSION['product'] as $id=>$product){
         $size=$id+10;
         $i++;
     }
-echo '<tr>';
-echo '<td><img alt="image" src="image/',$id,'.png"></td>';
+echo '<tr id="a">';
+echo '<td>','<img alt="image" src="image/',$id,'.png" style="width: 200px;
+height: 200px;">','</td>';
 echo '<input type="hidden" name="id" value="',$id,'">';
 echo '<td>',$product['name'],'</td>';//名前
+echo '<br>';
+echo '<td>',"数量：",$_POST[$id],'</td>';//個数
+echo '<td>',"サイズ：",$_POST[$size],'</td>';//サイズ
 echo '<td>',"￥",$product['price'],'</td>';//値段
-echo '<td>',$_POST[$size],'</td>';//サイズ
-echo '<td>',$_POST[$id],'</td>';//個数
 
 $total=$total+$product['price']*$_POST[$id];
 

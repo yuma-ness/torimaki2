@@ -1,0 +1,40 @@
+@charset "uft-8";
+.flex{
+    position: relative;
+    display: flex;
+    background-color: black;
+    z-index:-1;
+}
+.flex.image{
+    width:100px;
+    margin:0;
+    padding:0;
+  }
+  .flex.image img{
+    width: 80%;
+    height: auto;
+  }
+h1{
+    position:relative;
+    margin: 50px;
+    padding: 20px 0px 20px 260px;
+    color:white;
+}
+p{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+tr#a{
+    border: 2px solid slategray;
+    width:300px;
+    table-layout: fixed;
+}
+
+div{
+    border: 2px solid slategray;   
+}
+td#name{
+    text-align: center;
+}
