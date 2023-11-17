@@ -69,8 +69,8 @@ foreach($sqla as $a){
     echo '<tr>';
     echo '<td>',$jyuni,'位：</td>';
     echo '<td><img alt="image" src="image/',$a["id"],'.png" id="rank"></td>';
-    echo '<td>商品番号：',$a['id'],'</td>';
-    echo '<td>　商品名：',$a['name'],'</td>';
+    echo '<td>',$a['name'],'</td>';                                  //echo '<td>　商品名：',$a['name'],'</td>';    //echo '<td>商品番号：',$a['id'],'</td>';
+                                                            
     $jyuni++;
     echo '</tr>';
     }else{

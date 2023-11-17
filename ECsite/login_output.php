@@ -22,11 +22,11 @@ if(isset($_SESSION['customer'])){
 
 }else{
     echo 'ログイン名またはパスワードが違います。';
-    echo '<a href="index.php" id="my">マイページへ</a>';
+    echo '<a href="login_input.php" id="my">ログイン画面へ</a>';
 }
 }else{
     echo 'ログイン名またはパスワードを入力してください。';
-    echo '<a href="index.php" id="my">マイページへ</a>';
+    echo '<a href="login_input.php" id="my">ログイン画面へ</a>';
 }
 ?>
 <?php require 'footer.php'; ?>
