@@ -4,12 +4,7 @@
 <?php
 if(isset($_POST['passward']) || isset($_POST['login'])){
     unset($_SESSION['customer']);
-    unset($_SESSION['login']);
-    unset($_SESSION['loginkaisu']);
     $_SESSION['login']=[
-        'id'=>0
-    ];
-    $_SESSION['loginkaisu']=[
         'id'=>0
     ];
 if($_POST['password'] != null && $_POST['login'] != null){
@@ -25,12 +20,9 @@ foreach($sql as $row){
     ];
     }
 }
-if(isset($_SESSION['customer']) && $_SESSION['loginkaisu']['id']==0){
+if(isset($_SESSION['customer'])){
     echo 'いらっしゃいませ、',$_SESSION['customer']['name'],'さん。';
     $_SESSION['login']=[
-        'id'=>1
-    ];
-    $_SESSION['loginkaisu']=[
         'id'=>1
     ];
 }else{
@@ -43,7 +35,7 @@ if(isset($_SESSION['customer']) && $_SESSION['loginkaisu']['id']==0){
 }
 }
 if($_SESSION['login']['id']==1){
-?>    
+?>
 <div id="back">
     <div id="link">
     <a href="mypage.php" id="my">マイページへ</a>
@@ -99,14 +91,11 @@ foreach($sql2 as $row){
     echo '<tr>';
     }
 }
-
+}
 echo '</table>';
 echo '</div>';
 ?>
 <div id="cart">
 <a href="cart-show.php">カート</a>
-<?php
-}
-?>
 </div>
 <?php require 'footer.php'; ?> 

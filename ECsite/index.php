@@ -7,5 +7,6 @@
 </head>
 <body>
     <a href="login_input.php">official waka DANDISM</a>
+    <a href="login_input2.php">TEST</a>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <div class="main">
 <link rel="stylesheet" href="css/login_input.css">
 <img class="main-image" src="image/wakadan.jpg">
-<form action="shohin_top.php" method="post">
+<form action="shohin_top2.php" method="post">
     <p class="main-a">ユーザー名　　　<input type="text" name="login"><br></p>
     <p class="main-a">_____________________________________</p>
     <p class="main-a">パスワード　　　<input type="password" name="password"><br></p>
