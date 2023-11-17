@@ -76,6 +76,8 @@ foreach($_SESSION['purchase_history'] as $history_id=>$history){
 }*/
 unset($_SESSION['purchase_history']);
 unset($_SESSION['ranking']);
+unset($_SESSION['product']);
+
 ?>
 </p>
 </div>
