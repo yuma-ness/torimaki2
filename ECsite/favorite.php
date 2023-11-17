@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/favorite.css">
 <?php
 if(isset($_SESSION['customer'])){
     echo '<table>';
