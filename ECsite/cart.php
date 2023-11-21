@@ -39,6 +39,7 @@ if(!empty($_SESSION['product'])){
     echo '</table>';
     echo '<p><input type="submit" value="購入確認画面へ"></p>';
     echo '</form>';
+    echo '<p><a href="favorite-show.php">お気に入りへ</a></p>';
     echo '<p><a href="shohin_top.php">商品一覧へ</a></p>';
 }else{
     echo '<p>カートに商品がありません<br></p>';
