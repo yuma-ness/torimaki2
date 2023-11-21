@@ -7,6 +7,12 @@ if(isset($_SESSION['customer'])){
         'select * from favorite,product where customer_id=? and shohin_id=id'
     );
     $sql->execute([$_SESSION['customer']['id']]);
+    $sth=$pdo->prepare(
+        'select * from favorite,product where customer_id=? and shohin_id=id'
+    );
+    $sth->execute([$_SESSION['customer']['id']]);
+    $a=$sth->fetch(PDO::FETCH_COLUMN);
+    if($a>0){
     foreach($sql as $row){
         $id=$row['id'];
         echo '<tr>';
@@ -28,6 +34,9 @@ if(isset($_SESSION['customer'])){
         echo '</tr>';
     }
     echo '</table>';
+}else{
+    echo 'お気に入りに商品がありません。';
+}
     echo '<a href="shohin_top.php">商品一覧へ</a><br>';
     echo '<a href="mypage.php">マイページへ</a>';
 }else{
