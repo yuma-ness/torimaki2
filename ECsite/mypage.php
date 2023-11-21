@@ -31,6 +31,7 @@
          $useraddress=$_SESSION['customer']['useraddress'];
          $password=$_SESSION['customer']['password'];
      }
+     echo $_SESSION['customer']['id'];
          echo'<form action="mypage.php" method="post">';
          echo'<table align="center">';
          echo'<tr><td>ユーザー名</td><td>';
@@ -49,9 +50,8 @@
          echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'">','</p>';
          echo'</td></tr>';
          echo'</table>';
-         echo'<p>','<input type="submit" value="更新">','</p>';
+         echo'<p>','<input type="submit" value="更新" @onclick="num()">','</p>';
          echo'</form>';
-
      if($_SERVER["REQUEST_METHOD"]=='POST'){
         if(isset($_SESSION['customer'])){
             $sql=$pdo->prepare('update customer set user_name=?, password=?,mail_address=?,user_address=?,post=? where id=?');
@@ -61,13 +61,14 @@
             ]);
             $_SESSION['customer']=[
                 'id'=>$id,'name'=>$_REQUEST['name'],
-                'password'=>$_REQUEST['password'],'address'=>$_REQUEST['address'],
-                'useraddress'=>$_REQUEST['useraddress'],'post'=>$_REQUEST['post']
+                'password'=>$_REQUEST['password'],'address'=>$_POST['address'],
+                'useraddress'=>$_POST['useraddress'],'post'=>$_POST['post']
             ];
-            echo 'お客様情報を更新しました。';
+            echo '<label>お客様情報を更新しました。</label>';    
         }
     }
     ?>
             <a href="shohin_top.php"><button>商品一覧へ</button></a>
             <a class="logout" href="logout_input.php">ログアウト</a>
     </body>
+    
