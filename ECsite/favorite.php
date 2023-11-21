@@ -14,9 +14,11 @@ if(isset($_SESSION['customer'])){
         echo '<form action="cart-insert.php" method="post">';
         echo '<td>';
         echo '商品名：',$row['shohin_name'],'<br>';
+        echo 'カラー：',$row['exp'],'<br>';
         echo '価格：',$row['shohin_price'],'<br>';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
         echo '<input type="hidden" name="picture" value="image/',$row['id'],'.png">';
+        echo '<input type="hidden" name="exp" value="',$row['exp'],'">';
         echo '<input type="hidden" name="name" value="',$row['shohin_name'],'">';
         echo '<input type="hidden" name="price" value="',$row['shohin_price'],'">';
         echo '<input type="submit" value="カートに追加"><br>';
