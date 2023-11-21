@@ -31,7 +31,6 @@
          $useraddress=$_SESSION['customer']['useraddress'];
          $password=$_SESSION['customer']['password'];
      }
-     echo $_SESSION['customer']['id'];
          echo'<form action="mypage.php" method="post">';
          echo'<table align="center">';
          echo'<tr><td>ユーザー名</td><td>';
