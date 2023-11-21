@@ -49,7 +49,7 @@
          echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'">','</p>';
          echo'</td></tr>';
          echo'</table>';
-         echo'<p>','<input type="submit" value="更新" @onclick="num()">','</p>';
+         echo'<p>','<input type="submit" value="更新">','</p>';
          echo'</form>';
      if($_SERVER["REQUEST_METHOD"]=='POST'){
         if(isset($_SESSION['customer'])){
@@ -63,7 +63,7 @@
                 'password'=>$_REQUEST['password'],'address'=>$_POST['address'],
                 'useraddress'=>$_POST['useraddress'],'post'=>$_POST['post']
             ];
-            echo '<label>お客様情報を更新しました。</label>';    
+            echo 'お客様情報を更新しました。';    
         }
     }
     ?>
