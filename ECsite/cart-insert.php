@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cart-insert.css?v=1.0.0">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cart-insert.css?v=1.0.1">
+    <link rel="stylesheet" href="css/cart.css?v=1.0.1">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 </figure>
 <h1>カート</h1>
 <div id="div">
-<a href="mypage.php">マイページへ</a>
+<a href="mypage.php" id="hi">マイページへ</a>
 </div>
 </div>
 <?php

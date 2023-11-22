@@ -15,9 +15,6 @@ tr#a{
     table-layout: fixed;
 }
 
-div{
-    border: 2px solid slategray;   
-}
 td#name{
     text-align: center;
 }
