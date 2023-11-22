@@ -1,49 +1,6 @@
 <?php require 'header.php'; ?>
 <link rel="stylesheet" href="css/shohin_top.css">
-<?php require 'db-connect.php'; ?>
-<?php
-if(isset($_POST['passward']) || isset($_POST['login'])){
-    unset($_SESSION['customer']);
-    unset($_SESSION['login']);
-    unset($_SESSION['loginkaisu']);
-    $_SESSION['login']=[
-        'id'=>0
-    ];
-    $_SESSION['loginkaisu']=[
-        'id'=>0
-    ];
-if($_POST['password'] != null && $_POST['login'] != null){
-$pdo = new PDO($connect,USER,PASS);
-$sql = $pdo->prepare('select * from customer where user_name=?');
-$sql->execute([$_POST['login']]);
-foreach($sql as $row){
-    if($_POST["password"]==$row['password']){
-    $_SESSION['customer']=[
-        'id'=>$row['id'],'name'=>$row['user_name'],'post'=>$row['post'],
-        'password'=>$row['password'],'address'=>$row['mail_address'],
-        'useraddress'=>$row['user_address'],
-    ];
-    }
-}
-if(isset($_SESSION['customer']) && $_SESSION['loginkaisu']['id']==0){
-    echo 'いらっしゃいませ、',$_SESSION['customer']['name'],'さん。';
-    $_SESSION['login']=[
-        'id'=>1
-    ];
-    $_SESSION['loginkaisu']=[
-        'id'=>1
-    ];
-}else{
-    echo 'ログイン名またはパスワードが違います。';
-    echo '<a href="index.php" id="my">マイページへ</a>';
-}
-}else{
-    echo 'ログイン名またはパスワードを入力してください。';
-    echo '<a href="index.php" id="my">マイページへ</a>';
-}
-}
-if($_SESSION['login']['id']==1){
-?>    
+<?php require 'db-connect.php'; ?>  
 <div id="back">
     <div id="link">
     <a href="mypage.php" id="my">マイページへ</a>
@@ -105,8 +62,5 @@ echo '</div>';
 ?>
 <div id="cart">
 <a href="cart-show.php">カート</a>
-<?php
-}
-?>
 </div>
 <?php require 'footer.php'; ?> 

@@ -5,8 +5,9 @@
     <div id="link">
     <a href="mypage.php" id="my">マイページへ</a>
     <br>
-    <a href="favorite_show.php" id="favo">お気に入りへ</a>
-    <a href="shohin_top.php">商品トップ</a>
+    <a href="favorite-show.php" id="favo">お気に入りへ</a>
+    <br>
+    <a href="shohin_top.php" id="syo">商品トップ</a>
     </div>
 </div>
 <?php
