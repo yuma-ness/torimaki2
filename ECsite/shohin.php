@@ -7,7 +7,7 @@
     <br>
     <a href="favorite-show.php" id="favo">お気に入りへ</a>
     <br>
-    <a href="shohin_top.php" id="syo">商品トップ</a>
+    <a href="shohin_top.php" id="syo">商品トップへ」</a>
     </div>
 </div>
 <?php
