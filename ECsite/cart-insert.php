@@ -11,7 +11,7 @@
 <body>
 <div class="flex">
 <figure class="image">
-<img src ="image/rogo.jpg">
+<img src ="image/rogo.jpg" class="hed">
 </figure>
 <h1>カート</h1>
 <div id="div">
