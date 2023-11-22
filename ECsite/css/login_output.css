@@ -7,9 +7,10 @@
     width: auto;
 }
 h1{
-    position: relative;
-    margin: 50px;
-    padding: 20px 0px 20px 160px;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    margin: auto;
     color: white;
     z-index: 1;
 }
@@ -30,5 +31,7 @@ button{
     font-size: 25px;
     width: 350px;
     height: 50px;
-    margin-left: 37%;
+    margin: auto;
+    margin-left: 36%;
 }
+
