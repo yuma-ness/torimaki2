@@ -47,11 +47,11 @@
                 echo '<a href="login_input.php" id="my"><button>ログインへ戻る</button></a>';
     }else{
         echo'<p class="log">ログイン名が既に使用されています。</p>';
-        echo '<a href="customer_input.php" id="my"><button>登録画面へ戻る</button></a>';
+        echo '<a href="customer-input.php" id="my"><button>登録画面へ戻る</button></a>';
     }
     }else{
         echo'<p class="log">メールアドレスが既に使用されています。</p>';
-        echo '<a href="customer_input.php" id="my"><button>登録画面へ戻る</button></a>';
+        echo '<a href="customer-input.php" id="my"><button>登録画面へ戻る</button></a>';
     }
 ?>
 </div>

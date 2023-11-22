@@ -36,6 +36,8 @@ if (isset($_SESSION['customer'])){
     echo'</table>';
     echo'<p align="center">','<input type="submit" value="登録">','</p>';
     echo'</form>';
+
+    echo '<a href="login_input.php"><button>ログイン画面へ戻る</button></a>';
     ?>
     </div>
 <?php require 'footer.php'; ?>
