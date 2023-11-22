@@ -1,19 +1,37 @@
 @charset "uft-8";
-div#back{
-    background-color: black;
-}
-div#link{
-    text-align: right;
-    vertical-align: top;
-}
-a#moji{
-    color: floralwhite;
-    background-color: yellowgreen;
-}
-p{
-    text-align: center;
-}
-h1{
-    text-align: center;
-    color: floralwhite;
-}
+.flex{
+    position:relative;
+    display:flex;
+    background-color:black;
+    z-index:0;
+    margin-right: 0%;
+    padding-right: 0%;
+  }
+  .flex.image{
+    width:100px;
+    margin:0;
+    padding:0;
+  }
+  .flex.image img{
+    width: 80%;
+    height: auto;
+  }
+  h1{
+    position:relative;
+    margin: 50px;
+    padding: 20px 0px 20px 120px;
+    color:white;
+    z-index:1;
+  }
+  div#link{
+    text-align:right;
+    padding: 0px 0px 0px 250px;
+  }
+  a{
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  
+  div:last-child{
+    margin-left: auto;
+  }
