@@ -1,12 +1,22 @@
 <?php session_start(); ?>
-<?php require 'header.php'; ?>
-<link rel="stylesheet" href="css/cart-insert.css">
-<link rel="stylesheet" href="css/cart.css">
-<div id="back">
-    <div id="link">
-    <a href="mypage.php">マイページへ</a>
-    <h1>カート</h1>
-    </div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart-insert.css?v=1.0.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="flex">
+<figure class="image">
+<img src ="image/rogo.jpg">
+</figure>
+<h1>カート</h1>
+<div id="div">
+<a href="mypage.php">マイページへ</a>
+</div>
 </div>
 <?php
 $id=$_POST['id'];
