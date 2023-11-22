@@ -10,7 +10,8 @@ h1{
     justify-content: center;
     padding: 20px 20px 20px 20px;
     text-align: center;
-    margin: auto;
+    margin-left: 13%;
+    margin-top: 3%;
     color: white;
     z-index: 1;
 }
