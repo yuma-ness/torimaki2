@@ -8,17 +8,24 @@ src="image/rogo.jpg">
 </div>
 <?php require 'header.php'; ?>
 <?php require 'db-connect.php'; ?>
-<div id='a'>
+<!-- <div id='a'>
 <p class='log'>購入が完了しました<br>
-発送準備が出来次第お届けします<br>
+発送準備が出来次第お届けします<br> -->
+<div id="a">
 
 <?php
 $id=$_POST['id'];
 $pdo = new PDO($connect,USER,PASS);
 $sql = $pdo->prepare('select * from customer where user_name=?');
-$sql->execute([$_SESSION['customer']['useraddress']]);
+$sql->execute([$_SESSION['customer']['name']]);
 foreach($sql as $row){
+    
+    echo '<p class="log">','購入が完了しました<br>';
+    echo '発送準備が出来次第、';
     echo $row['user_address'];
+    echo '<br>';
+    echo 'にお届けします<br>';
+    
 }
 $sqlvalue = $pdo->prepare('replace into Ranking values(?,?,?)');
 $id_sql = $pdo->query('select id from Ranking');
