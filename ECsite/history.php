@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
+<?php require 'menu.php'; ?>
 <?php require 'db-connect.php'; ?>
 <?php
 if(isset($_SESSION['customer'])){
@@ -43,7 +44,7 @@ echo '<tr><th>商品番号</th><th>商品名</th><th>価格</th><th>個数</th><
     }else{
     echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
     echo '<table>';
-    echo '<tr><th>　　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
+    echo '<tr><th></th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     $tabid=$row2['purchase_id'];
     $total=0;
     }    
