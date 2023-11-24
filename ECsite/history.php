@@ -44,7 +44,11 @@ echo '<tr><th>商品番号</th><th>商品名</th><th>価格</th><th>個数</th><
     }else{
     echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
     echo '<table>';
+<<<<<<< HEAD
     echo '<tr><th></th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
+=======
+    echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
+>>>>>>> e7d5686f5ab51bbd479a58de123a7210c45f371e
     $tabid=$row2['purchase_id'];
     $total=0;
     }    
