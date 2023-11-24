@@ -7,6 +7,8 @@ body{
 .item {
     display: flex;
     margin: 20px;
+    margin-right: 75%;
+    border: 2px solid slategray;
 }
 
 .item-s {
@@ -44,6 +46,9 @@ h1{
     margin: 50px;
     padding: 20px 0px 20px 260px;
     color:white;
+}
+label{
+    font-size: 50px;
 }
 /* div{
     border: 2px solid slategray;   

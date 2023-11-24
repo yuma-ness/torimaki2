@@ -56,7 +56,7 @@ $size++;
 echo '<div class="kane">';
 echo '合計金額　　　　　　　　　　　　　　　　　　';
 echo '<div class="kane-s">';
-echo "￥",$total;
+echo "<label>￥",$total,"</label>税込";
 echo '</div>';
 echo '</div>';
 // echo '</table>';

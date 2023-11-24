@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/favorite.css">
 <?php
 if(isset($_SESSION['customer'])){
     echo '<table>';
@@ -38,7 +37,7 @@ if(isset($_SESSION['customer'])){
     echo 'お気に入りに商品がありません。';
 }
     echo '<a href="shohin_top.php">商品一覧へ</a><br>';
-    echo '<a href="mypage.php">マイページへ</a>';
+  //  echo '<a href="mypage.php">マイページへ</a>';
 }else{
     echo 'お気に入りを表示するには、ログインしてください。';
     echo '<a href="login_input.php">ログイン画面へ</a>';
