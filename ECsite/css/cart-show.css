@@ -1,12 +1,37 @@
 @charset "uft-8";
-div#back{
-    background-color: black;
-}
-div#link{
-    text-align: right;
-    vertical-align: top;
+.flex{
+  position: relative;
+  display: flex;
+  background-color: black;
+  z-index: -1;
+  width: auto;
 }
 h1{
-    text-align: center;
-    color: floralwhite;
+  position: relative;
+  margin: 50px;
+  padding: 20px 0px 20px 260px;
+  color: white;
+  z-index: 1;
 }
+div#link{
+    text-align:right;
+    padding: 0px 0px 0px 250px;
+  }
+  a{
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  
+  div:last-child{
+    margin-left: auto;
+  }
+  a.hi{
+    position: absolute;
+  }
+  a#hi{
+    color: floralwhite;
+    background-color: yellowgreen;
+  }
+  div.div{
+    position: relative;
+  }
