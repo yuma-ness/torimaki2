@@ -1,3 +1,4 @@
+
 <?php
 if(isset($_SESSION['customer'])){
     echo '<table>';
@@ -15,7 +16,7 @@ if(isset($_SESSION['customer'])){
     foreach($sql as $row){
         $id=$row['id'];
         echo '<tr>';
-        echo '<td><img alt="image" src="image/',$id,'.png"></td>';
+        echo '<td><img alt="image" src="image/',$id,'.png" width="300" height="300"></td>';
         echo '<form action="cart-insert.php" method="post">';
         echo '<td>';
         echo '商品名：',$row['shohin_name'],'<br>';

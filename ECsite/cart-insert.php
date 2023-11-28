@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cart-insert.css?v=1.0.1">
     <link rel="stylesheet" href="css/cart.css?v=1.0.1">
-    <title>Document</title>
+    <title>カート挿入</title>
 </head>
 <body>
 <div class="flex">
