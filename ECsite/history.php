@@ -32,7 +32,7 @@ foreach($sql as $a){
 }
 $total=0;
 $kaw=0;
-echo '<table>';
+echo '<table border="1">';
 //echo '<tr><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     foreach($_SESSION['history'] as $hisid=>$row2){
     $nowid=$row2['purchase_id']; 
@@ -47,7 +47,7 @@ echo '<table>';
     echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
     echo '</table>';
 
-    echo '<table>';
+    echo '<table border="1">';
     //echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     $tabid=$row2['purchase_id'];
     $total=0;
@@ -59,16 +59,18 @@ echo '<table>';
         echo '<tr>';
         $osql->execute([$nowid]);
         foreach($osql as $wer){
-            echo $wer['day'];
+            echo '<th>',$wer['day'],'</th>';
         }
+        echo '</tr>';
         $t2++;
+        echo '<tr>';
         echo '<td><img alt="image" src="image/',$pros['id'],'.png" id="rank" width="150" height="150"></td>';
-        echo '<td>',$pros['shohin_name'],'</td>';
-        echo '<td>',$pros['shohin_price'],'</td>';
-        echo '<td>',$row2['count'],'</td>';
+        echo '<td>',$pros['shohin_name'],'</td>','<br>';
+        echo '<td>',$pros['shohin_price'],'</td>','<br>';
+        echo '<td>',$row2['count'],'</td>','<br>';
         $goukei=$pros['shohin_price']*$row2['count'];
         $total+=$goukei;
-        echo '<td>',$goukei,'</td>';
+        //echo '<td>',$goukei,'</td>';
         echo '</tr>';
     }   
 }
