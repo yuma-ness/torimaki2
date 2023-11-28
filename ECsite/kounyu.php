@@ -69,12 +69,16 @@ echo '</div>';
 echo '</div>';
 echo '<h3>購入を確定しますか？</h3>';
 echo '</th>';
-echo '</tr>';
-echo '</table>';
 
 ?>
+</tr>
+<tr>
+<td>
 <p><input type="submit" value="購入確定"></p>
 </form>
 <br>
 <a href="cart-show.php">カートへ戻る</a>
+</td>
+</tr>
+</table>
 <?php require 'footer.php'; ?>
