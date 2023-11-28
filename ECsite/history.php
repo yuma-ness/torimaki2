@@ -45,17 +45,19 @@ echo '<table>';
         echo '';
     }else{
     echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
+    echo '</table>';
+
     echo '<table>';
-    echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
+    //echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     $tabid=$row2['purchase_id'];
     $total=0;
     }    
 
     $t2=0;
+    $osql=$pdo->prepare('select day from purchase_history where purchase_id=?');
     foreach($product as $pros){
         echo '<tr>';
-        $osql=$pdo->prepare('select day from purchase_history where purchase_id=?');
-        $osql->execute([$_SESSION['history'][$t2]['purchase_id']]);
+        $osql->execute([$nowid]);
         foreach($osql as $wer){
             echo $wer['day'];
         }
@@ -71,6 +73,7 @@ echo '<table>';
     }   
 }
 echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
+echo '</table>';
     
 
 
