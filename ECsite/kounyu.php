@@ -49,7 +49,8 @@ $_SESSION['purchase_history'][$id]=[ //購入履歴
     'price'=>$product['price'],
     'shohin_picture'=>$id,
     'count'=>$_POST[$id],
-    'size'=>$_POST[$size]
+    'size'=>$_POST[$size],
+    'day'=>date("Y/m/i")
 ];
 $size++;
 }
@@ -59,39 +60,9 @@ echo '<div class="kane-s">';
 echo "<label>￥",$total,"</label>税込";
 echo '</div>';
 echo '</div>';
-// echo '</table>';
 echo '<h3>購入を確定しますか？</h3>';
 
-// echo '<tr id="a">';
-// echo '<td>','<img alt="image" src="image/',$id,'.png" style="width: 200px;
-// height: 200px;">','</td>';
-// echo '<input type="hidden" name="id" value="',$id,'">';
-// echo '<td>',$product['name'],'</td>';//名前
-// echo '<br>';
-// echo '<td>',"数量：",$_POST[$id],'</td>';//個数
-// echo '<td>',"サイズ：",$_POST[$size],'</td>';//サイズ
-// echo '<td>',"￥",$product['price'],'</td>';//値段
 
-// $total=$total+$product['price']*$_POST[$id];
-
-// $_SESSION['ranking'][$id]=[ //ランキング
-//     'name'=>$product['name'],
-//     'count'=>$_POST[$id]
-// ];
-
-// $_SESSION['purchase_history'][$id]=[ //購入履歴
-//     'customer_id'=>$_SESSION['customer']['id'],
-//     'name'=>$product['name'],
-//     'price'=>$product['price'],
-//     'shohin_picture'=>$id,
-//     'count'=>$_POST[$id],
-//     'size'=>$_POST[$size]
-// ];
-// $size++;
-// }
-// echo '<tr><th>合計金額</th><th></th><th></th><th></th><th></th><th>',"￥",$total,'</th></tr>';
-// echo '</table>';
-// echo '<h3>購入を確定しますか？</h3>';
 ?>
 <p><input type="submit" value="購入確定"></p>
 </form>

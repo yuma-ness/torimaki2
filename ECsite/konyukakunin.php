@@ -53,9 +53,9 @@ $s = $pdo->prepare('insert into purchase values(null,?)');
 $s->execute([$_SESSION['customer']['id']]);
 $id=$pdo->lastInsertId();
 
-$sql = $pdo->prepare('insert into purchase_history values(?,?,?,?,?,?,?,?)');
+$sql = $pdo->prepare('insert into purchase_history values(?,?,?,?,?,?,?,?,?)');
 foreach($_SESSION['purchase_history'] as $hisid=>$history){
-$sql->execute([$id,$hisid,$history['customer_id'],$history['name'],$history['price'],$history['shohin_picture'],$history['count'],$history['size']]);
+$sql->execute([$id,$hisid,$history['customer_id'],$history['name'],$history['price'],$history['shohin_picture'],$history['count'],$history['size'],$history['day']]);
 }
 
 /*$sql = $pdo->prepare('replace into purchase_history values(?,?,?,?,?,?)');
