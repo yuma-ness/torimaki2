@@ -4,6 +4,7 @@
 <a href="mypage.php" id="hi">マイページへ</a><br>
 <a href="shohin_top.php">商品一覧へ</a><br>
 <?php
+unset($_SESSION['history']);
 if(isset($_SESSION['customer'])){
 
 if(!isset($_SESSION['history'])){
@@ -11,11 +12,11 @@ if(!isset($_SESSION['history'])){
 }
 
 $pdo = new PDO($connect,USER,PASS);
-$sql=$pdo->prepare('select id from purchase where customer_id=?');
+$sql=$pdo->prepare('select id from purchase where customer_id=? order by id desc');
 $sql->execute([$_SESSION['customer']['id']]);
 $id=0;
 $t=0;
-$psql=$pdo->prepare('select * from purchase_history where purchase_id=?');
+$psql=$pdo->prepare('select * from purchase_history where purchase_id=? order by purchase_id desc');
 $product=$pdo->prepare('select * from product where id=?');
 foreach($sql as $a){
     $id=$a['id'];
@@ -50,14 +51,15 @@ echo '<table>';
     $total=0;
     }    
 
-    
+    $t2=0;
     foreach($product as $pros){
         echo '<tr>';
-        $osql=$pdo->prepare('select * from purchase_history where purchase_id=?');
-        $osql->execute([$id]);
+        $osql=$pdo->prepare('select day from purchase_history where purchase_id=?');
+        $osql->execute([$_SESSION['history'][$t2]['purchase_id']]);
         foreach($osql as $wer){
             echo $wer['day'];
         }
+        $t2++;
         echo '<td><img alt="image" src="image/',$pros['id'],'.png" id="rank" width="150" height="150"></td>';
         echo '<td>',$pros['shohin_name'],'</td>';
         echo '<td>',$pros['shohin_price'],'</td>';
