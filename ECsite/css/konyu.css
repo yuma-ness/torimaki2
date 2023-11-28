@@ -1,9 +1,7 @@
 @charset "uft-8";
-body{
-    background-color: rgb(133, 139, 158);
-
+.form{
+   text-align: center; 
 }
-
 .item {
     display: flex;
     margin: 20px;
@@ -16,6 +14,7 @@ body{
 }
 
 .kane {
+    padding: 0px 0px 0px 550px;
     display: flex;
 }
 
@@ -49,6 +48,9 @@ h1{
 }
 label{
     font-size: 50px;
+}
+.a{
+    text-align: center;
 }
 /* div{
     border: 2px solid slategray;   
