@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cart-show.css?v=1.0.0">
     <link rel="stylesheet" href="css/cart.css?v=1.0.1">
-    <title>Document</title>
+    <title>カート削除</title>
 </head>
 <body>
 <div class="flex">
