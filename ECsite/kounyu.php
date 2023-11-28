@@ -25,16 +25,20 @@ foreach($_SESSION['product'] as $id=>$product){
         $size=$id+10;
         $i++;
     }
+echo '<table align="center" border="1">';
+echo '<tr>';
 echo '<div class="item">';
-echo '<img alt="image" src="image/',$id,'.png" width="150" height="150">';
+echo '<td><img alt="image" src="image/',$id,'.png" width="150" height="150"></td>';
 echo '<input type="hidden" name="id" value="',$id,'">';
 echo '<div class="item-s">';
-echo '<div>',$product['name'],'</div>';//名前
-echo '<div>','<span class="color">',$_POST[$size],'</span>','　サイズ','</div>';//サイズ
-echo '<div>','<span class="color-1">',$_POST[$id],'</span>','　個</div>';//個数
-echo '<div>',"￥",$product['price'],'</div>';//値段
+echo '<td><div>',$product['name'],'<br>';//名前
+echo '<span class="color">',$_POST[$size],'</span>','サイズ　';//サイズ
+echo '<span class="color-1">',$_POST[$id],'</span>','個　';//個数
+echo "￥",$product['price'],'</div></td>';//値
 echo '</div>';
 echo '</div>';
+echo '</tr>';
+echo '</table>';
 
 $total=$total+$product['price']*$_POST[$id];
 
@@ -54,6 +58,9 @@ $_SESSION['purchase_history'][$id]=[ //購入履歴
 ];
 $size++;
 }
+echo '<table align="center">';
+echo '<tr>';
+echo '<th>';
 echo '<div class="kane">';
 echo '合計金額:';
 echo '<div class="kane-s">';
@@ -61,7 +68,9 @@ echo "<label>￥",$total,"</label>税込";
 echo '</div>';
 echo '</div>';
 echo '<h3>購入を確定しますか？</h3>';
-
+echo '</th>';
+echo '</tr>';
+echo '</table>';
 
 ?>
 <p><input type="submit" value="購入確定"></p>
