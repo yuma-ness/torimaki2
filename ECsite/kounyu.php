@@ -49,7 +49,8 @@ $_SESSION['purchase_history'][$id]=[ //購入履歴
     'price'=>$product['price'],
     'shohin_picture'=>$id,
     'count'=>$_POST[$id],
-    'size'=>$_POST[$size]
+    'size'=>$_POST[$size],
+    'day'=>date("Y/m/i")
 ];
 $size++;
 }
