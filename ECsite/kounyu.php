@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
-<link rel="stylesheet" href="css/konyu.css">
+<link rel="stylesheet" href="css/konyu.css?v=1.0.0">
 <div class="flex">
 <figure class="image"><img 
 src="image/rogo.jpg">
@@ -54,7 +54,7 @@ $_SESSION['purchase_history'][$id]=[ //購入履歴
 $size++;
 }
 echo '<div class="kane">';
-echo '合計金額　　　　　　　　　　　　　　　　　　';
+echo '合計金額:';
 echo '<div class="kane-s">';
 echo "<label>￥",$total,"</label>税込";
 echo '</div>';
