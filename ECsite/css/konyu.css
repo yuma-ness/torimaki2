@@ -6,7 +6,6 @@
     display: flex;
     margin: 20px;
     margin-right: 75%;
-    border: 2px solid slategray;
 }
 
 .item-s {
@@ -14,7 +13,6 @@
 }
 
 .kane {
-    padding: 0px 0px 0px 550px;
     display: flex;
 }
 
@@ -49,9 +47,7 @@ h1{
 label{
     font-size: 50px;
 }
-.a{
-    text-align: center;
-}
+
 /* div{
     border: 2px solid slategray;   
 } */

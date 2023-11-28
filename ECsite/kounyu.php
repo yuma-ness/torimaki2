@@ -69,6 +69,8 @@ echo '</div>';
 echo '</div>';
 echo '<h3>購入を確定しますか？</h3>';
 echo '</th>';
+echo '</tr>';
+echo '</table>';
 
 ?>
 </tr>
