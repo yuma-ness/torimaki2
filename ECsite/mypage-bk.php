@@ -17,6 +17,8 @@
     <a href="history.php" id="hi">注文履歴</a>
     <br>
     <a href="favorite-show.php" id="favo">お気に入りへ</a>
+    <br>
+    <a href="shohin_top.php" id="ab">商品一覧へ</a>
 </div>
     </div>
 <?php require 'db-connect.php';?>
@@ -69,7 +71,7 @@
          echo'</form>';
      
     ?>
-            <a href="shohin_top.php"><button>商品一覧へ</button></a>
+            
             <a class="logout" href="logout_input.php">ログアウト</a>
     </body>
     
