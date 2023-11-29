@@ -25,22 +25,6 @@
 <?php
      $pdo=new PDO($connect,USER,PASS);
      $name=$address=$post=$useraddress=$password='';
-     if($_SERVER["REQUEST_METHOD"]=='POST'){
-        if(isset($_SESSION['customer'])){
-            $id=$_SESSION['customer']['id'];
-            $sql=$pdo->prepare('update customer set user_name=?, password=?,mail_address=?,user_address=?,post=? where id=?');
-            $sql->execute([
-                $_POST['name'],$_POST['password'],
-                $_POST['address'],$_POST['useraddress'],$_POST['post'],$id
-            ]);
-            $_SESSION['customer']=[
-                'id'=>$id,'name'=>$_POST['name'],
-                'password'=>$_POST['password'],'address'=>$_POST['address'],
-                'useraddress'=>$_POST['useraddress'],'post'=>$_POST['post']
-            ];
-            echo 'お客様情報を更新しました。';    
-        }
-    }
      if (isset($_SESSION['customer'])){
         $id=$_SESSION['customer']['id'];
          $name=$_SESSION['customer']['name'];
@@ -69,9 +53,23 @@
          echo'</table>';
          echo'<p>','<input type="submit" value="更新">','</p>';
          echo'</form>';
-     
+
+     if($_SERVER["REQUEST_METHOD"]=='POST'){
+        if(isset($_SESSION['customer'])){
+            $sql=$pdo->prepare('update customer set user_name=?, password=?,mail_address=?,user_address=?,post=? where id=?');
+            $sql->execute([
+                $_REQUEST['name'],$_REQUEST['password'],
+                $_REQUEST['address'],$_REQUEST['useraddress'],$_REQUEST['post'],$id
+            ]);
+            $_SESSION['customer']=[
+                'id'=>$id,'name'=>$_REQUEST['name'],
+                'password'=>$_REQUEST['password'],'address'=>$_REQUEST['address'],
+                'useraddress'=>$_REQUEST['useraddress'],'post'=>$_REQUEST['post']
+            ];
+            echo 'お客様情報を更新しました。';
+        }
+    }
     ?>
-            
+            <!-- <a href="shohin_top.php"><button>商品一覧へ</button></a> -->
             <a class="logout" href="logout_input.php">ログアウト</a>
     </body>
-    
