@@ -51,27 +51,28 @@
      }
          echo'<form action="mypage.php" method="post">';
          echo'<table align="center">';
-         echo'<tr><td>ユーザー名</td><td>';
+         echo'<tr><td>ユーザー名</td><td></td><td>';
          echo'<p>','<input type="text" align="center" name="name" value="',$name,'">','</p>';
          echo'</td></tr>';
-         echo'<tr><td>メールアドレス</td><td>';
+         echo'<tr><td>メールアドレス</td><td></td><td>';
          echo'<p>','<input type="text" name="address" value="',$address,'">','</p>';
          echo'</td></tr>';
-         echo'<tr><td>パスワード</td><td>';
+         echo'<tr><td>パスワード</td><td></td><td>';
          echo'<p>','<input type="text" name="password" value="',$password,'">','</p>';
          echo'</td></tr>';
-         echo'<tr><td>郵便番号</td><td>';
+         echo'<tr><td>郵便番号</td><td></td><td>';
          echo'<p>','<input type="text" name="post" value="',$post,'">','</p>';
          echo'</td></tr>';
-         echo'<tr><td>住所</td><td>';
+         echo'<tr><td>住所</td><td></td><td>';
          echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'">','</p>';
          echo'</td></tr>';
-         echo'</table>';
+         echo '<tr><td></td><td>';
          echo'<p>','<input type="submit" value="更新">','</p>';
          echo'</form>';
-     
+         echo '</td><td></td></tr></table>';
     ?>
             
             <a class="logout" href="logout_input.php">ログアウト</a>
-    </body>
+            
+            <?php require 'footer.php'; ?> 
     
