@@ -37,7 +37,7 @@ if(isset($_SESSION['customer'])){
 }else{
     echo 'お気に入りに商品がありません。';
 }
-    echo '<a href="shohin_top.php">商品一覧へ</a><br>';
+    //echo '<a href="shohin_top.php">商品一覧へ</a><br>';
   //  echo '<a href="mypage.php">マイページへ</a>';
 }else{
     echo 'お気に入りを表示するには、ログインしてください。';

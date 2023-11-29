@@ -14,7 +14,8 @@
 </figure>
 <h1>お気に入り</h1>
 <div id="div">
-<a href="mypage.php" id="hi">マイページへ</a>
+<a href="mypage.php" id="hi">マイページへ</a><br>
+<a href="shohin_top.php">商品一覧へ</a>
 </div>
 </div>
 <?php require 'db-connect.php'; ?>
