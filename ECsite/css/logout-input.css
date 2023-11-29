@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     background-color: black;
-    z-index:-1;
+    z-index:0;
 }
 .flex.image{
     width:100px;

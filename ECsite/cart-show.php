@@ -14,8 +14,8 @@
 <img src ="image/rogo.jpg" class="hed">
 </figure>
 <h1>カート</h1>
-<div id="div">
-<a href="mypage.php" id="hi">マイページへ</a>
+<div id="hi">
+<a href="mypage.php">マイページへ</a>
 </div>
 </div>
 <?php require 'cart.php'; ?>
