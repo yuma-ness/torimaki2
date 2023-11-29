@@ -1,7 +1,7 @@
 
 <?php
 if(isset($_SESSION['customer'])){
-    echo '<table>';
+    echo '<table align="center">';
     $pdo = new PDO($connect,USER,PASS);
     $sql=$pdo->prepare(
         'select * from favorite,product where customer_id=? and shohin_id=id'
@@ -30,14 +30,14 @@ if(isset($_SESSION['customer'])){
         echo '<input type="submit" value="カートに追加"><br>';
         echo '</form>';
         echo '</td>';
-        echo '<td><a href=favorite-delete.php?id=',$id,'">削除</a></td>';
+        echo '<td><a href=favorite-delete.php?id=',$id,'"><button>削除</button></a></td>';
         echo '</tr>';
     }
     echo '</table>';
 }else{
     echo 'お気に入りに商品がありません。';
 }
-    echo '<a href="shohin_top.php">商品一覧へ</a><br>';
+    //echo '<a href="shohin_top.php">商品一覧へ</a><br>';
   //  echo '<a href="mypage.php">マイページへ</a>';
 }else{
     echo 'お気に入りを表示するには、ログインしてください。';

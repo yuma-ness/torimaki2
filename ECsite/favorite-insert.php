@@ -12,7 +12,7 @@
 <figure class="image">
 <img src ="image/rogo.jpg" class="hed">
 </figure>
-<h1>カート</h1>
+<h1>お気に入り</h1>
 <div id="div">
 <a href="mypage.php" id="hi">マイページへ</a>
 </div>
