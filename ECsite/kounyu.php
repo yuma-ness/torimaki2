@@ -18,8 +18,6 @@ if(!isset($_SESSION['purchase_history'])){
 $i=1;
 $size=0;
 echo '<form action="konyukakunin.php" method="post" style="text-align: center">';
-// echo '<table>';
-//echo '<tr><th>商品番号</th><th>商品名</th><th>価格</th><th>サイズ</th><th>個数</th><th></th></tr>';
 foreach($_SESSION['product'] as $id=>$product){
     if($i==1){
         $size=$id+10;
@@ -35,6 +33,7 @@ echo '<td><div>',$product['name'],'<br>';//名前
 echo '<span class="color">',$_POST[$size],'</span>','サイズ　';//サイズ
 echo '<span class="color-1">',$_POST[$id],'</span>','個　';//個数
 echo "￥",$product['price'],'</div></td>';//値
+//echo '<input type="hidden" name="exp" value="',$_POST['exp'],'">';
 echo '</div>';
 echo '</div>';
 echo '</tr>';
@@ -44,7 +43,8 @@ $total=$total+$product['price']*$_POST[$id];
 
 $_SESSION['ranking'][$id]=[ //ランキング
     'name'=>$product['name'],
-    'count'=>$_POST[$id]
+    'count'=>$_POST[$id],
+    'colar'=>$product['exp']
 ];
 
 $_SESSION['purchase_history'][$id]=[ //購入履歴

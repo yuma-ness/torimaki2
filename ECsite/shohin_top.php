@@ -25,8 +25,9 @@ foreach($sqla as $a){
     if($jyuni<6){
     echo '<tr>';
     echo '<td>',$jyuni,'位：</td>';
-    echo '<td><img alt="image" src="image/',$a["id"],'.png" id="rank"></td>';
-    echo '<td>',$a['name'],'</td>';                                  //echo '<td>　商品名：',$a['name'],'</td>';    //echo '<td>商品番号：',$a['id'],'</td>';
+    echo '<td><img alt="image" src="image/',$a["shohin_id"],'.png" id="rank"></td>';
+    echo '<td>',$a['name'],'</td>';
+    echo '<td>',$a['colar'],'</td>';                                  //echo '<td>　商品名：',$a['name'],'</td>';    //echo '<td>商品番号：',$a['id'],'</td>';
                                                             
     $jyuni++;
     echo '</tr>';
@@ -45,7 +46,7 @@ echo '<table id="cate" align="center">';
 echo '<tr>';
 foreach($sql2 as $row){
     echo '<td id="cate"><a href="shohin.php?category=',$row['category'],'">';
-    echo '<img src="image2/',$row['picture'],'.png" alt="image">';//カテゴリ画像表示⇒image2
+    echo '<img src="image/',$row['picture'],'.png" alt="image">';//カテゴリ画像表示⇒image2
     echo '</a><br>';
     echo '<a href="shohin.php?category=',$row['category'],'">',$row['category'],'</a>';
     echo '</td>';
