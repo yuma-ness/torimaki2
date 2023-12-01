@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/favorite.css?v=1.0.0">
+    <link rel="stylesheet" href="css/mypage.css?v=1.0.0">
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +14,8 @@
 </figure>
 <h1>お気に入り</h1>
 <div id="div">
-<a href="mypage.php" id="hi">マイページへ</a>
+<a href="mypage.php" id="hi">マイページへ</a><br>
+<a href="shohin_top.php" id="ab">商品一覧へ</a>
 </div>
 </div>
 <?php require 'db-connect.php'; ?>
