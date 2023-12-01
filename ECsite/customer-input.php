@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<link rel="stylesheet" href="css/customer_input.css?v=1.0.0">">
+<link rel="stylesheet" href="css/customer_input.css?v=1.0.0">
 <div class="flex">
 <figure class="image"><img 
 src="image/rogo.jpg">
@@ -33,11 +33,17 @@ if (isset($_SESSION['customer'])){
     echo'<tr><td>住所</td><td>';
     echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'"required>','</p>';
     echo'</td></tr>';
-    echo'</table>';
+    echo '</table>';
+
+    echo '<table align="center">';
+    echo'<tr><td>';
     echo'<p align="center">','<input type="submit" value="登録">','</p>';
     echo'</form>';
-
+    echo'</td></tr>';
+    echo'<tr><td>';
     echo '<a href="login_input.php"><button>ログイン画面へ戻る</button></a>';
+    echo'</td></tr>';
     ?>
+    </table>
     </div>
 <?php require 'footer.php'; ?>

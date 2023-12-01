@@ -1,4 +1,62 @@
 @charset "uft-8";
+.flex{
+    position:relative;
+    display:flex;
+    background-color:black;
+    z-index:0;
+    margin-right: 0%;
+    padding-right: 0%;
+    justify-content: space-between;
+  }
+  div#div{
+    margin: 0px 0px 0px 0px;
+    margin-left: auto;
+  }
+  .flex.image{
+    width:100px;
+    margin:0;
+    padding:0;
+  }
+  .flex.image img{
+    width: 80%;
+    height: auto;
+  }
+  div#link{
+    text-align:right;
+    padding: 0px 0px 0px 250px;
+  }
+  .flex.form{
+    text-align:center;
+    padding: 0px 250px 0px 0px;
+    margin: auto;
+  }
+  a{
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  
+  div:last-child{
+    margin-left: auto;
+  }
+  
+  a.hi{
+    position: absolute;
+  }
+  a.favo{
+    position: absolute;
+  }
+  a#hi{
+    color: floralwhite;
+    background-color: yellowgreen;
+  }
+  a#favo{
+    color: floralwhite;
+    background-color: brown;
+  }
+
+
+
+
 div#link{
     text-align: right;
     vertical-align: top;

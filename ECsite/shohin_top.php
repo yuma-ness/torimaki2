@@ -1,18 +1,23 @@
 <?php require 'header.php'; ?>
-<link rel="stylesheet" href="css/shohin_top.css">
+<link rel="stylesheet" href="css/shohin_top.css?v=1.0.1">
 <?php require 'db-connect.php'; ?>  
-<div id="back">
-    <div id="link">
-    <a href="mypage.php" id="my">マイページへ</a>
-    <br>
-    <a href="favorite-show.php" id="favo">お気に入りへ</a>
-    </div>
+<div class="flex">
+    <figure class="image">
+    <img src ="image/rogo.jpg">
+    </figure>
+    <div id="fm">
     <form action="shohin.php" method="post">
-    <div id="kensaku">
     <input type="text" name="kensaku" size="70" ><input type="submit" value="検索" size="35" >
-    </div>
     </form>
+    </div>
+        <div id="div">   
+        <a href="mypage.php" id="hi">マイページへ</a>
+        <br>
+        <a href="favorite-show.php" id="favo">お気に入りへ</a>
+        </div>
 </div>
+
+
 <div id="ranking">
     <h1>ランキング</h1>
 <?php
