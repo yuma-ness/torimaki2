@@ -41,7 +41,7 @@ if (isset($_SESSION['customer'])){
     echo'</form>';
     echo'</td></tr>';
     echo'<tr><td>';
-    echo '<a href="login_input.php"><button>ログイン画面へ戻る</button></a>';
+    echo '<a href="login_input.php">ログイン画面へ戻る</a>';
     echo'</td></tr>';
     ?>
     </table>
