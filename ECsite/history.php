@@ -1,8 +1,17 @@
 <?php session_start(); ?>
 <link rel="stylesheet" href="css/history.css">
 <?php require 'db-connect.php'; ?>
-<a href="mypage.php" id="hi">マイページへ</a><br>
-<a href="shohin_top.php">商品一覧へ</a><br>
+<div class="flex">
+<figure class="image">
+<img src ="image/rogo.jpg">
+</figure>
+    <h1>注文履歴</h1>
+<div id="div">   
+   <a href="mypage.php" id="hi">マイページへ</a>
+    <br>
+   <a href="shohin_top.php" id="ab" >商品一覧へ</a>
+</div>
+    </div>
 <?php
 unset($_SESSION['history']);
 if(isset($_SESSION['customer'])){

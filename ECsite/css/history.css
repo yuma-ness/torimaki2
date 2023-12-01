@@ -1,9 +1,44 @@
 @charset "uft-8";
-body{
-    background-color: rgb(133, 139, 158);
-
+.flex{
+    position:relative;
+    display:flex;
+    background-color:black;
+    z-index:0;
+    margin-right: 0%;
+    padding-right: 0%;
 }
-
+.flex.image{
+    width:100px;
+    margin:0;
+    padding:0;
+}
+.flex.image img{
+    width: 80%;
+    height: auto;
+}
+h1{
+    position:relative;
+    margin: 50px;
+    padding: 20px 0px 20px 120px;
+    color:white;
+    z-index:1;
+}
+a.hi{
+    position: absolute;
+}
+  a.ab{
+    position: absolute;
+}
+a#hi{
+    color: floralwhite;
+    background-color: yellowgreen;
+    width:100px;
+}
+a#ab{
+      color: floralwhite;
+      background-color: blue;
+      width:100px;
+}
 .item {
     display: flex;
     margin: 20px;
@@ -25,27 +60,6 @@ body{
 
 .color-1{
     color:blueviolet
-}
-.flex{
-    position: relative;
-    display: flex;
-    background-color: black;
-    z-index:0;
-}
-.flex.image{
-    width:100px;
-    margin:0;
-    padding:0;
-  }
-  .flex.image img{
-    width: 80%;
-    height: auto;
-  }
-h1{
-    position:relative;
-    margin: 50px;
-    padding: 20px 0px 20px 260px;
-    color:white;
 }
 label{
     font-size: 50px;
