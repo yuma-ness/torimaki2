@@ -15,7 +15,8 @@
 </figure>
 <h1>カート</h1>
 <div id="div">
-<a href="mypage.php" id="hi">マイページへ</a>
+<a href="mypage.php" id="hi">マイページへ</a><br>
+<a href="favorite-show.php">お気に入りへ</a>;
 </div>
 </div>
 <?php

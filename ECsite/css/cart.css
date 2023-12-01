@@ -22,3 +22,12 @@ tr#a{
 td#name{
     text-align: center;
 }
+a.my{
+    color:white;
+    background-color: yellowgreen;
+}
+a.fa{
+    color:white;
+    background-color: red;
+}
+

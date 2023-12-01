@@ -45,14 +45,17 @@ a.favo{
 a#hi{
   color: floralwhite;
   background-color: yellowgreen;
+  width:100px;
 }
 a#favo{
   color: floralwhite;
   background-color: brown;
+  width:100px;
 }
 a#ab{
     color: floralwhite;
     background-color: blue;
+    width:100px;
 }
 a.logout{
   margin: 0 0 0 800px;
@@ -60,3 +63,7 @@ a.logout{
 div.div{
   position: relative;
 }
+
+/* div.me{
+  width:100px;
+} */

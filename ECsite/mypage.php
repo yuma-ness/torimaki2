@@ -14,11 +14,11 @@
 </figure>
     <h1>マイページ</h1>
 <div id="div">   
-    <a href="history.php" id="hi">注文履歴</a>
+   <a href="history.php" id="hi">注文履歴</a>
     <br>
-    <a href="favorite-show.php" id="favo">お気に入りへ</a>
+   <a href="favorite-show.php" id="favo" >お気に入りへ</a>
     <br>
-    <a href="shohin_top.php" id="ab">商品一覧へ</a>
+   <a href="shohin_top.php" id="ab" >商品一覧へ</a>
 </div>
     </div>
 <?php require 'db-connect.php';?>
