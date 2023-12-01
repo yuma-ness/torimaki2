@@ -32,12 +32,10 @@ a.hi{
 a#hi{
     color: floralwhite;
     background-color: yellowgreen;
-    width:100px;
 }
 a#ab{
       color: floralwhite;
       background-color: blue;
-      width:100px;
 }
 .item {
     display: flex;
