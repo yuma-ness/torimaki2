@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<link rel="stylesheet" href="css/customer_input.css?v=1.0.0">">
+<link rel="stylesheet" href="css/customer_input.css?v=1.0.0">
 <div class="flex">
 <figure class="image"><img 
 src="image/rogo.jpg">
