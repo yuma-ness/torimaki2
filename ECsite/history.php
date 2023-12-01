@@ -32,7 +32,7 @@ foreach($sql as $a){
 }
 $total=0;
 $kaw=0;
-echo '<table border="1">';
+echo '<table border="1" align="center">';
 //echo '<tr><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     foreach($_SESSION['history'] as $hisid=>$row2){
     $nowid=$row2['purchase_id']; 
@@ -47,7 +47,7 @@ echo '<table border="1">';
     echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
     echo '</table>';
 
-    echo '<table border="1">';
+    echo '<table border="1" align="center">';
     //echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     $tabid=$row2['purchase_id'];
     $total=0;
