@@ -1,15 +1,25 @@
 <?php require 'header.php'; ?>
 <link rel="stylesheet" href="css/shohin.css">
 <?php require 'db-connect.php'; ?>
-<div id="back">
-    <div id="link">
-    <a href="mypage.php" id="my">マイページへ</a>
-    <br>
-    <a href="favorite-show.php" id="favo">お気に入りへ</a>
-    <br>
-    <a href="shohin_top.php" id="syo">商品トップへ</a>
+<div class="flex">
+    <figure class="image">
+    <img src ="image/rogo.jpg">
+    </figure>
+    <div id="fm">
+    <form action="shohin.php" method="post">
+    <input type="text" name="kensaku" size="70" ><input type="submit" value="検索" size="35" >
+    </form>
+    </div>
+        <div id="div">   
+        <a href="mypage.php" id="hi">マイページへ</a>
+        <br>
+        <a href="favorite-show.php" id="favo">お気に入りへ</a>
+        <br>
+        <a href="shohin_top.php" id="ab">商品トップへ</a>
     </div>
 </div>
+
+
 <?php
 $pdo = new PDO($connect,USER,PASS);
 
