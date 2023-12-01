@@ -27,7 +27,8 @@
     position: relative;
     display: flex;
     background-color: black;
-    z-index:0;
+    z-index: 0;
+    width: auto;
 }
 .flex.image{
     width:100px;
