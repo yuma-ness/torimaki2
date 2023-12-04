@@ -23,11 +23,8 @@ h1{
     color:white;
     z-index:1;
 }
-a.hi{
-    position: absolute;
-}
-  a.ab{
-    position: absolute;
+div#div{
+    padding: 0px 0px 0px 700px;
 }
 a#hi{
     color: floralwhite;

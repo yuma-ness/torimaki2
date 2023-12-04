@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<link rel="stylesheet" href="css/history.css">
+<link rel="stylesheet" href="css/history.css?v=1.0.1">
 <?php require 'db-connect.php'; ?>
 <div class="flex">
 <figure class="image">
