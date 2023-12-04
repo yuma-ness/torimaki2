@@ -11,7 +11,7 @@
 <figure class="image">
 <img src ="image/rogo.jpg">
 </figure>
-    <h1>ログアウト</h1>
+    <h1>新規登録完了</h1>
 </div>
 <body>
 <?php require 'db-connect.php';?>
