@@ -28,6 +28,9 @@ a.my{
 }
 a.fa{
     color:white;
-    background-color: red;
+    background-color: brown;
 }
-
+a#fa{
+    color:white;
+    background-color: brown;
+}
