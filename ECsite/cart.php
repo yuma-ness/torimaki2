@@ -15,7 +15,7 @@ if(!empty($_SESSION['product'])){
         echo '<td><img alt="image" src="', $product['picture'] ,'"></td>';
        
        
-        echo '<td id="name"><a href="detail.php?id=',$id,'">',$product['name'],'</a><br>';
+        echo '<td id="name">',$product['name'],'<br>';//エラーでてる 12/05
         echo '<br>',$product['exp'];
         
         echo '<select name="',$size,'">';
