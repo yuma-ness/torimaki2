@@ -10,10 +10,14 @@
     <input type="text" name="kensaku" size="70" ><input type="submit" value="検索" size="35" >
     </form>
     </div>
-        <div id="div">   
+<div id="div">   
         <a href="mypage.php" id="hi">マイページへ</a>
         <br>
         <a href="favorite-show.php" id="favo">お気に入りへ</a>
+        <br>
+        <a href="logout_input.php">ログアウト</a>
+        <br>
+        <a href="cart-show.php">カート</a>
         </div>
 </div>
 
@@ -66,7 +70,4 @@ foreach($sql2 as $row){
 echo '</table>';
 echo '</div>';
 ?>
-<div id="cart">
-<a href="cart-show.php">カート</a>
-</div>
 <?php require 'footer.php'; ?> 

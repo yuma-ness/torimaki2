@@ -12,6 +12,17 @@
 <img src ="image/rogo.jpg">
 </figure>
     <h1>ログアウト</h1>
+    <div id="div">   
+        <a href="mypage.php" id="hi">マイページへ</a>
+        <br>
+        <a href="favorite-show.php" id="favo">お気に入りへ</a>
+        <br>
+        <a href="shohin_top.php" id="ab">商品トップへ</a>
+        <br>
+        <a href="logout_input.php">ログアウト</a>
+        <br>
+        <a href="cart-show.php">カート</a>
+    </div>
 </div>
 <body>
 <?php require 'db-connect.php';?>

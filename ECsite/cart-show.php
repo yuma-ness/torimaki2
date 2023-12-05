@@ -14,10 +14,15 @@
 <img src ="image/rogo.jpg" class="hed">
 </figure>
 <h1>カート</h1>
-<div id="hi">
-<a href="mypage.php" class="my">マイページへ</a><br>
-<a href="favorite-show.php" class="fa">お気に入りへ</a>;
-</div>
+    <div id="hi">   
+        <a href="mypage.php" id="my">マイページへ</a>
+        <br>
+        <a href="favorite-show.php" id="fa">お気に入りへ</a>
+        <br>
+        <a href="shohin_top.php" id="ab">商品トップへ</a>
+        <br>
+        <a href="logout_input.php">ログアウト</a>
+    </div>
 </div>
 <?php require 'cart.php'; ?>
 <?php require 'footer.php'; ?>

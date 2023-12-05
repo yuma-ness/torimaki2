@@ -18,7 +18,11 @@
         <br>
         <a href="favorite-show.php" id="favo">お気に入りへ</a>
         <br>
-        <a href="shohin_top.php" id="ab">商品一覧へ</a>
+        <a href="shohin_top.php" id="ab">商品トップへ</a>
+        <br>
+        <a href="logout_input.php">ログアウト</a>
+        <br>
+        <a href="cart-show.php">カート</a>
         </div>
 </div>
 
