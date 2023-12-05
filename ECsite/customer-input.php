@@ -5,7 +5,7 @@
 src="image/rogo.jpg">
 </figure>
 <h1>新規登録<h1>
-    <div id="div">   
+    <!-- <div id="div">   
         <a href="mypage.php" id="hi">マイページへ</a>
         <br>
         <a href="favorite-show.php" id="favo">お気に入りへ</a>
@@ -15,7 +15,7 @@ src="image/rogo.jpg">
         <a href="logout_input.php">ログアウト</a>
         <br>
         <a href="cart-show.php">カート</a>
-    </div>
+    </div> -->
 </div>
 <div id="back">
 <?php
