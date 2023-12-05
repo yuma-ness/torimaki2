@@ -11,6 +11,7 @@
 <figure class="image">
 <img src ="image/rogo.jpg">
 </figure>
+<<<<<<< HEAD
     <h1>ログアウト</h1>
     <div id="div">   
         <a href="mypage.php" id="hi">マイページへ</a>
@@ -23,6 +24,9 @@
         <br>
         <a href="cart-show.php">カート</a>
     </div>
+=======
+    <h1>新規登録完了</h1>
+>>>>>>> 6f474540b0c54f34fc523a3c8fc07af83a3d1523
 </div>
 <body>
 <?php require 'db-connect.php';?>

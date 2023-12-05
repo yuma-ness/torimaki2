@@ -3,8 +3,14 @@
     text-align:center;
 }
 .main-image{
+    width: 37%;
     text-align:center;
 }
 .main-a{
     color:rgb(99, 99, 255)
+}
+button[type="submit"]{width: 20%;padding: 10px;background-color:#4CAF50;color: #ffffff;border: none;border-radius: 4px;cursor: pointer;
+}
+button{
+    width: 20%;padding: 10px;background-color:cornflowerblue;color: #ffffff;border: none;border-radius: 4px;cursor: pointer;
 }

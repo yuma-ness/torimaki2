@@ -47,7 +47,7 @@ foreach($sql as $a){
 }
 $total=0;
 $kaw=0;
-echo '<table border="1" align="center">';
+echo '<table frame="box" align="center">';
 //echo '<tr><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     foreach($_SESSION['history'] as $hisid=>$row2){
     $nowid=$row2['purchase_id']; 
@@ -59,10 +59,10 @@ echo '<table border="1" align="center">';
     if($tabid==$nowid){
         echo '';
     }else{
-    echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
+    echo '<tr><td></td><td></td><td></td><td></td><td>','合計金額:','￥',$total,'</td></tr>';
     echo '</table>';
 
-    echo '<table border="1" align="center">';
+    echo '<table frame="box" align="center">';
     //echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     $tabid=$row2['purchase_id'];
     $total=0;
@@ -81,15 +81,17 @@ echo '<table border="1" align="center">';
         echo '<tr>';
         echo '<td><img alt="image" src="image/',$pros['id'],'.png" id="rank" width="150" height="150"></td>';
         echo '<td>',$pros['shohin_name'],'</td>','<br>';
-        echo '<td>',$pros['shohin_price'],'</td>','<br>';
-        echo '<td>',$row2['count'],'</td>','<br>';
+        echo '</tr>';
+        echo '<tr>';
+        echo '<td></td><td>','￥',$pros['shohin_price'],'</td>';
+        echo '<td><td></td><td>','(',$row2['count'],'点)','</td>';
         $goukei=$pros['shohin_price']*$row2['count'];
         $total+=$goukei;
         //echo '<td>',$goukei,'</td>';
         echo '</tr>';
     }   
 }
-echo '<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td></tr>';
+echo '<tr><td></td><td></td><td></td><td></td><td>','合計金額:','￥',$total,'</td></tr>';
 echo '</table>';
     
 
