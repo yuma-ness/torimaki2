@@ -13,4 +13,4 @@
 <p>　　　　　↓　　　　　</p>
 <a href="customer-input.php"><button>新規登録</button></a>
 </div>
-<?php require 'footer.php'; ?>    dlkd
+<?php require 'footer.php'; ?>  
