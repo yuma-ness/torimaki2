@@ -9,7 +9,7 @@
     <p class="main-a">_____________________________________</p>
     <button type="submit">ログイン</button>
 </form>
-<p>　　　　　　　　　　　</p>
+
 <p>初めての方はこちらから</p>
 <a href="customer-input.php"><button>新規登録</button></a>
 </div>
