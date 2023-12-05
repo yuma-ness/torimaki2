@@ -5,7 +5,7 @@
 src="image/rogo.jpg">
 </figure>
 <h1>新規登録<h1>
-    <div id="div">   
+    <!-- <div id="div">   
         <a href="mypage.php" id="hi">マイページへ</a>
         <br>
         <a href="favorite-show.php" id="favo">お気に入りへ</a>
@@ -15,7 +15,7 @@ src="image/rogo.jpg">
         <a href="logout_input.php">ログアウト</a>
         <br>
         <a href="cart-show.php">カート</a>
-    </div>
+    </div> -->
 </div>
 <div id="back">
 <?php
@@ -30,19 +30,19 @@ if (isset($_SESSION['customer'])){
     echo'<form action="customer-output.php" method="post">';
     echo'<table align="center">';
     echo'<tr><td>ユーザー名</td><td>';
-    echo'<p>','<input type="text" align="center" name="name" value="',$name,'"required>','</p>';
+    echo'<p>','<input type="text" placeholder="必須項目です" align="center" name="name" value="',$name,'"required>','</p>';
     echo'</td></tr>';
     echo'<tr><td>メールアドレス</td><td>';
-    echo'<p>','<input type="text" name="address" value="',$address,'"required>','</p>';
+    echo'<p>','<input type="text" placeholder="必須項目です"  name="address" value="',$address,'"required>','</p>';
     echo'</td></tr>';
     echo'<tr><td>パスワード</td><td>';
-    echo'<p>','<input type="text" name="password" value="',$password,'"required>','</p>';
+    echo'<p>','<input type="password" placeholder="必須項目です"  name="password" value="',$password,'"required>','</p>';
     echo'</td></tr>';
     echo'<tr><td>郵便番号</td><td>';
-    echo'<p>','<input type="text" name="post" value="',$post,'"required>','</p>';
+    echo'<p>','<input type="text" placeholder="必須項目です"  name="post" value="',$post,'"required>','</p>';
     echo'</td></tr>';
     echo'<tr><td>住所</td><td>';
-    echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'"required>','</p>';
+    echo'<p>','<input type="text" placeholder="必須項目です"  name="useraddress" value="',$useraddress,'"required>','</p>';
     echo'</td></tr>';
     echo '</table>';
 
