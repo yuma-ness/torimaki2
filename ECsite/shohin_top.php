@@ -11,44 +11,25 @@
             <input type="text" name="kensaku" size="70" ><input type="submit" value="検索" size="35" >
         </form>
     </div>
-    <div id="app">
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <div 
-                :class="{'is-active': isActive}"
-                class="navbar-burger"
-                @click="toggleButton"
-                >
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>
-            </div>
-            <div id="menu" class="navbar-menu" :class="{'is-active': isActive}">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                    <a href="mypage.php">マイページへ</a>
-                    </a>
-                    <a class="navbar-item">
-                    <a href="favorite-show.php">お気に入りへ</a>
-                    </a>
-                    <a class="navbar-item">
-                    <a href="cart-show.php">カート</a>
-                    </a>
-                    <a class="navbar-item">
-                    <a href="logout_input.php">ログアウト</a>
-                    </a>
-                </div>
-            </div>
+    <div class="nav">
+    
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+    
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="">メニュー1</a></li>
+            <li class="nav_item"><a href="">メニュー2</a></li>
+            <li class="nav_item"><a href="">メニュー3</a></li>
+          </ul>
         </nav>
-    </div>
-    </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="script/script.js"></script>
-
-
+   
+      </div>
+</div>
 <div id="ranking">
     <h1>ランキング</h1>
 <?php
