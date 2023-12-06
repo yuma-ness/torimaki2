@@ -62,7 +62,7 @@ echo '<table frame="box" align="center">';
     }else{
     echo '<tr><td></td><td></td><td></td><td></td><td>','合計金額:','￥',$total,'</td></tr>';
     echo '</table>';
-
+    $dayopen=0;
     echo '<table frame="box" align="center">';
     //echo '<tr><th>　　　</th><th>商品名</th><th>価格</th><th>個数</th><th>小計</th></tr>';
     $tabid=$row2['purchase_id'];
@@ -94,7 +94,7 @@ echo '<table frame="box" align="center">';
         //echo '<td>',$goukei,'</td>';
         echo '</tr>';
     }   
-    $dayopen=0;
+
 }
 echo '<tr><td></td><td></td><td></td><td></td><td>','合計金額:','￥',$total,'</td></tr>';
 echo '</table>';
