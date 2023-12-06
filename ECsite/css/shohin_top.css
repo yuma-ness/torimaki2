@@ -59,7 +59,7 @@
 .nav_content {
   width: 20%;
   height: 18%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 100%; /* メニューを画面の外に飛ばす */
   z-index: 99;
@@ -77,6 +77,7 @@
 #drawer_input:checked ~ .nav_content {
   left:  900px;/* メニューを画面に入れる */
 }
+
 .flex{
     position:relative;
     display:flex;
