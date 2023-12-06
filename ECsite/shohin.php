@@ -7,7 +7,7 @@
     </figure>
     <div id="fm">
     <form action="shohin.php" method="post">
-    <input type="text" name="kensaku" size="70" ><input type="submit" value="検索" size="35" >
+    <input type="text" name="kensaku" placeholder="商品名を検索できます" size="70" ><input type="submit" value="検索" size="35" >
     </form>
     </div>
 <div id="div">   
