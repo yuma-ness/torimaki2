@@ -1,7 +1,7 @@
 <?php require 'header.php'; ?>
-<link rel="stylesheet" href="css/shohin_top.css?v=1.0.1">
+<link rel="stylesheet" href="css/shohin_top.css?v=1.0.4">
 <?php require 'db-connect.php'; ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
 <div class="flex">
     <figure class="image">
         <img src ="image/rogo.jpg">
@@ -22,9 +22,10 @@
         <!-- メニュー -->
         <nav class="nav_content">
           <ul class="nav_list">
-            <li class="nav_item"><a href="">メニュー1</a></li>
-            <li class="nav_item"><a href="">メニュー2</a></li>
-            <li class="nav_item"><a href="">メニュー3</a></li>
+            <li class="nav_item"><a href="mypage.php" id="b">マイページへ</a></li>
+            <li class="nav_item"><a href="favorite-show.php" id="b">お気に入りへ</a></li>
+            <li class="nav_item"><a href="cart-show.php" id="b">カート</a></li>
+            <li class="nav_item"><a href="logout_input.php" id="b">ログアウト</a></li>
           </ul>
         </nav>
    
