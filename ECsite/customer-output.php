@@ -4,29 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/logout-output.css">
+    <link rel="stylesheet" href="css/customer_output.css">
     <title>Document</title>
 </head>
 <div class="flex">
 <figure class="image">
 <img src ="image/rogo.jpg">
 </figure>
-<<<<<<< HEAD
-    <h1>ログアウト</h1>
-    <div id="div">   
-        <a href="mypage.php" id="hi">マイページへ</a>
-        <br>
-        <a href="favorite-show.php" id="favo">お気に入りへ</a>
-        <br>
-        <a href="shohin_top.php" id="ab">商品トップへ</a>
-        <br>
-        <a href="logout_input.php">ログアウト</a>
-        <br>
-        <a href="cart-show.php">カート</a>
-    </div>
-=======
-    <h1>新規登録完了</h1>
->>>>>>> 6f474540b0c54f34fc523a3c8fc07af83a3d1523
+    <h1>新規登録</h1>
 </div>
 <body>
 <?php require 'db-connect.php';?>
