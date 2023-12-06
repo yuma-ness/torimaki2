@@ -19,6 +19,7 @@
     </div>
     </div>
 <?php
+$dayopen=0;
 unset($_SESSION['history']);
 if(isset($_SESSION['customer'])){
 
@@ -69,13 +70,16 @@ echo '<table frame="box" align="center">';
     }    
 
     $t2=0;
-    $osql=$pdo->prepare('select day from purchase_history where purchase_id=?');
+    $osql=$pdo->prepare('select day from purchase_history where purchase_id=? limit 1');
     foreach($product as $pros){
         echo '<tr>';
         $osql->execute([$nowid]);
+    if($dayopen==0){
         foreach($osql as $wer){
             echo '<th>',$wer['day'],'</th>';
         }
+    $dayopen=1;
+    }
         echo '</tr>';
         $t2++;
         echo '<tr>';
@@ -90,6 +94,7 @@ echo '<table frame="box" align="center">';
         //echo '<td>',$goukei,'</td>';
         echo '</tr>';
     }   
+    $dayopen=0;
 }
 echo '<tr><td></td><td></td><td></td><td></td><td>','合計金額:','￥',$total,'</td></tr>';
 echo '</table>';
