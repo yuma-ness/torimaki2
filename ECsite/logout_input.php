@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/logout-input.css">
+<link rel="stylesheet" href="css/logout-input.css?v=1.0.2">
 <div class="flex">
 <figure class="image"><img 
 src="image/rogo.jpg">
