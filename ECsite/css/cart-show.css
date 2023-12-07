@@ -104,13 +104,6 @@ div#link{
   div:last-child{
     margin-left: auto;
   }
-  a.hi{
-    position: absolute;
-  }
-  a#hi{
-    color: floralwhite;
-    background-color: yellowgreen;
-  }
   div.div{
     position: relative;
   }
