@@ -14,17 +14,26 @@
     <img src ="image/rogo.jpg">
     </figure>
     <h1>マイページ</h1>
-        <div id="div">   
-        <a href="history.php" id="hi">注文履歴</a>
-        <br>
-        <a href="favorite-show.php" id="favo">お気に入りへ</a>
-        <br>
-        <a href="shohin_top.php" id="ab">商品トップへ</a>
-        <br>
-        <a href="logout_input.php">ログアウト</a>
-        <br>
-        <a href="cart-show.php">カート</a>
-        </div>
+    <div class="nav">
+    
+    <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+    <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+    <!-- ハンバーガーアイコン -->
+    <label for="drawer_input" class="drawer_open"><span></span></label>
+
+    <!-- メニュー -->
+    <nav class="nav_content">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="history.php" id="b">注文履歴</a></li>
+        <li class="nav_item"><a href="favorite-show.php" id="b">お気に入りへ</a></li>
+        <li class="nav_item"><a href="shohin_top.php" id="b">商品トップへ</a></li>
+        <li class="nav_item"><a href="cart-show.php" id="b">カート</a></li>
+        <li class="nav_item"><a href="logout_input.php" id="b">ログアウト</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </div>
 
 <?php require 'db-connect.php';?>
