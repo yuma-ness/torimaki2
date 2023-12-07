@@ -1,21 +1,30 @@
 <?php session_start(); ?>
-<link rel="stylesheet" href="css/konyukakunin.css">
+<link rel="stylesheet" href="css/konyukakunin.css?v=1.0.0">
 <div class="flex">
 <figure class="image"><img 
 src="image/rogo.jpg">
 </figure>
-<h1>購入完了<h1>
-    <div id="div">   
-        <a href="mypage.php" id="hi">マイページへ</a>
-        <br>
-        <a href="favorite-show.php" id="favo">お気に入りへ</a>
-        <br>
-        <a href="shohin_top.php" id="ab">商品トップへ</a>
-        <br>
-        <a href="logout_input.php">ログアウト</a>
-        <br>
-        <a href="cart-show.php">カート</a>
-    </div>
+<h1>購入完了</h1>
+<div class="nav">
+    
+    <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+    <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+    <!-- ハンバーガーアイコン -->
+    <label for="drawer_input" class="drawer_open"><span></span></label>
+
+    <!-- メニュー -->
+    <nav class="nav_content">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="mypage.php" id="b">マイページへ</a></li>
+        <li class="nav_item"><a href="favorite-show.php" id="b">お気に入りへ</a></li>
+        <li class="nav_item"><a href="shohin_top.php" id="b">商品一覧</a></li>
+        <li class="nav_item"><a href="cart-show.php" id="b">カート</a></li>
+        <li class="nav_item"><a href="logout_input.php" id="b">ログアウト</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </div>
 <?php require 'header.php'; ?>
 <?php require 'db-connect.php'; ?>
