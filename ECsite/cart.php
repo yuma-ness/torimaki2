@@ -38,11 +38,11 @@ if(!empty($_SESSION['product'])){
         $size++;
     }
     echo '</table>';
-    echo '<p><input type="submit" value="購入確認画面へ"></p>';
+    echo '<p><button>購入確認画面へ</button></p>';
     echo '</form>';
     echo '<p><a href="shohin_top.php"><button>商品一覧へ</button></a></p>';
 }else{
-    echo '<p>カートに商品がありません<br></p>';
+    echo '<p class="id">カートに商品がありません<br></p>';
     echo '<p><a href="shohin_top.php"><button>商品一覧へ</button></a></p>';
 }
 ?>
