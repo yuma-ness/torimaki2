@@ -19,7 +19,7 @@ src="image/rogo.jpg">
       <ul class="nav_list">
         <li class="nav_item"><a href="mypage.php" id="b">マイページへ</a></li>
         <li class="nav_item"><a href="favorite-show.php" id="b">お気に入りへ</a></li>
-        <li class="nav_item"><a href="shohin_top.php" id="b">商品一覧</a></li>
+        <li class="nav_item"><a href="shohin_top.php" id="b">商品トップへ</a></li>
         <li class="nav_item"><a href="cart-show.php" id="b">カート</a></li>
         <li class="nav_item"><a href="logout_input.php" id="b">ログアウト</a></li>
       </ul>
