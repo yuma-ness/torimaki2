@@ -82,7 +82,7 @@
          echo'<p>','<input type="text" name="useraddress" value="',$useraddress,'">','</p>';
          echo'</td></tr>';
          echo '<tr><td></td><td>';
-         echo '<p><input type="submit" values="更新"></p>';
+         echo '<p><input type="submit" value="更新"></p>';
          echo'</form>';
          echo '</td><td></td></tr></table>';
     ?>
