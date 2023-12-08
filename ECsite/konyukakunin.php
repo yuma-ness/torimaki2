@@ -81,4 +81,5 @@ unset($_SESSION['product']);
 ?>
 </p>
 </div>
+<p><a href="shohin_top.php"><button>商品一覧へ戻る</button></a></p>
 <?php require 'footer.php'; ?>
