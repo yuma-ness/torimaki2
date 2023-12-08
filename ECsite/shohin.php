@@ -121,7 +121,5 @@ foreach($sql as $row){
 echo '</table>';
 }
 ?>
-<div id="cart">
-<a href="cart-show.php">カート</a>
-</div>
+
 <?php require 'footer.php'; ?> 
