@@ -86,8 +86,7 @@
          echo'</form>';
          echo '</td><td></td></tr></table>';
     ?>
-            
-            <a class="logout" href="logout_input.php">ログアウト</a>
+          
             
             <?php require 'footer.php'; ?> 
     
