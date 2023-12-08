@@ -17,7 +17,7 @@
   h1{
     position:relative;
     margin: 50px;
-    padding: 20px 0px 20px 260px;
+    padding: 20px 0px 20px 160px;
     color:white;
     z-index:1;
   }
@@ -25,9 +25,9 @@ div#a{
     border: solid 2px black;
     width: 500px;
     height: 200px;
-    margin-top: 80px;
-    margin-left: 510px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-left: 390px;
+    margin-bottom: 40px;
 }
 .log{
     font-size: 20px;
@@ -38,7 +38,7 @@ button{
   text-align: center;
   font-size: 25px;
   height: 50px;
-  margin-left: 40%;
+  margin-left: 42%;
   margin-bottom: 40px;
   width: 20%;
   background-color:dimgrey;
