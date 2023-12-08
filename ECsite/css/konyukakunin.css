@@ -6,7 +6,7 @@
 /* ハンバーガーアイコンの設置スペース */
 .drawer_open {
   display: flex;
-  padding-left: 500px;
+  padding-left: 400px;
   height: 60px;
   width: 60px;
   justify-content: center;
@@ -114,6 +114,7 @@ div#a{
 }
 a#b{
   color: #fff;
+  text-decoration: none;
 }
 button{
   text-align: center;

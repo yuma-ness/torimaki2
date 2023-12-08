@@ -95,8 +95,6 @@ echo '</th>';
 <td>
 <p><button>購入確定</button></p>
 </form>
-<br>
-<a href="cart-show.php"><button>カートへ戻る</button></a>
 </td>
 </tr>
 </table>
