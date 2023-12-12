@@ -12,7 +12,7 @@ src="image/rogo.jpg">
 unset($_SESSION['customer']);
 if($_POST['password'] != null && $_POST['login'] != null){
 $pdo = new PDO($connect,USER,PASS);
-$sql = $pdo->prepare('select * from customer where user_name=?');
+$sql = $pdo->prepare('select * from customer where mail_address=?');//user_name ユーザー名をメアドに変更
 $sql->execute([$_POST['login']]);
 foreach($sql as $row){
     if($_POST["password"]==$row['password']){
