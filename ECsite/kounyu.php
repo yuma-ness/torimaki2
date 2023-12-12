@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
-<link rel="stylesheet" href="css/konyu.css?v=1.0.2">
+<link rel="stylesheet" href="css/konyu.css?v=1.0.1">
 <div class="flex">
 <figure class="image"><img 
 src="image/rogo.jpg">
