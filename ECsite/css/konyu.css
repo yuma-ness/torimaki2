@@ -6,7 +6,6 @@
   /* ハンバーガーアイコンの設置スペース */
   .drawer_open {
     display: flex;
-    padding-left: 400px;
     height: 60px;
     width: 60px;
     justify-content: center;
@@ -77,6 +76,9 @@
   /* アイコンがクリックされたらメニューを表示 */
   #drawer_input:checked ~ .nav_content {
     left:  900px;/* メニューを画面に入れる */
+  }
+  div.nav{
+    padding-left: 400px;
   }
   
 .form{
