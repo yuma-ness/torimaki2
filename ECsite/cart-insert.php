@@ -25,6 +25,7 @@
     <!-- メニュー -->
     <nav class="nav_content">
       <ul class="nav_list">
+        <li class="nav_item"><a href="history.php" id="b">注文履歴</a></li>
         <li class="nav_item"><a href="mypage.php" id="b">マイページへ</a></li>
         <li class="nav_item"><a href="favorite-show.php" id="b">お気に入りへ</a></li>
         <li class="nav_item"><a href="logout_input.php" id="b">ログアウト</a></li>

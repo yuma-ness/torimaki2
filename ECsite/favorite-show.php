@@ -24,6 +24,7 @@
     <!-- メニュー -->
     <nav class="nav_content">
       <ul class="nav_list">
+        <li class="nav_item"><a href="history.php" id="b">注文履歴</a></li>
         <li class="nav_item"><a href="mypage.php" id="b">マイページへ</a></li>
         <li class="nav_item"><a href="shohin_top.php" id="b">商品トップへ</a></li>
         <li class="nav_item"><a href="cart-show.php" id="b">カート</a></li>
