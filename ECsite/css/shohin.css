@@ -127,8 +127,8 @@ div#cart{
     margin-left: 95%;
 }
 input#submit{
-    background-color: brown;
-    color: floralwhite;
+    background-color: rgb(227, 202, 13);
+    color: rgb(35, 34, 32);
 }
 div#table{
     border: 2px solid slategray;
