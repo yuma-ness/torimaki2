@@ -16,22 +16,22 @@ if(!empty($_SESSION['product'])){
        
        
         echo '<td id="name">',$product['name'],'<br>';
-        echo '<br>',$product['exp'];
+        echo 'カラー : ',$product['exp'],'<br>';
         
-        echo '<select name="',$size,'">';
+        echo 'サイズ : ','<select name="',$size,'">';
         echo '<option value="S" selected>S</option>';
         echo '<option value="M">M</option>';
         echo '<option value="L">L</option>';
-        echo '</select>';
+        echo '</select>','<br>';
         
 
-        echo '<select name="',$id,'">';
+        echo ' 個数 : ','<select name="',$id,'">';
         echo '<option value="1" selected>1</option>';
         echo '<option value="2">2</option>';
         echo '<option value="3">3</option>';
         echo '<option value="4">4</option>';
         echo '<option value="5">5</option>';
-        echo '</select>',"￥",number_format($product['price']),"税込",'</td>';
+        echo '</select>','<br>',"￥",number_format($product['price']),"税込",'</td>';
         
         echo '<td><a href="cart-delete.php?id=',$id,'">削除</a></td>';
         echo '</tr><br>';
