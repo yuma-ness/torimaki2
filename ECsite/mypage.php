@@ -73,7 +73,7 @@
          echo'<p>','<input type="text" name="address" value="',$address,'">','</p>';
          echo'</td></tr>';
          echo'<tr><td>パスワード</td><td></td><td>';
-         echo'<p>','<input type="text" name="password" value="',$password,'">','</p>';
+         echo'<p>','<input type="password" name="password" value="',$password,'">','</p>';
          echo'</td></tr>';
          echo'<tr><td>郵便番号</td><td></td><td>';
          echo'<p>','<input type="text" name="post" value="',$post,'">','</p>';
